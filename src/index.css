@@ -9,20 +9,17 @@ html { scroll-behavior: smooth; }
 
   --color-primary: #ff4158;
   --color-secondary: #b380db;
-  --color-light: #e9ebf7;
+  --color-tertiary: #8d4bfa;
+  --color-accent: #ffdca7;
+  --color-light: #f2ecfe;
   --color-dark: #302543;
-  --color-muted: #9f9f9f;
+  --color-muted: #edf1f8;
 
 }
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sora);
-  }
-  h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 700;
   }
   p {
     font-family: var(--font-space);

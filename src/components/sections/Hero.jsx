@@ -6,7 +6,7 @@ import heroPerson from "../../assets/images/hero-person.png";
 
 function Hero() {
   return (
-    <section className="w-full flex justify-center">
+    <section id="hero"className="w-full flex justify-center">
 
       <Container>
 
@@ -14,7 +14,9 @@ function Hero() {
           className="
             bg-light rounded-xl 
             grid md:grid-cols-[60%_40%] gap-10
-            px-30 justify-center items-center
+            px-6 md:px-15 lg:px-30
+            md:py-50 lg:py-0
+            justify-center items-center
           "
           style={{
             backgroundImage: `url(${heroBg})`,
@@ -27,7 +29,10 @@ function Hero() {
             <h2 className="text-secondary tracking-widest mb-4 font-light">
               marketing digital
             </h2>
-            <h1 className="text-dark mb-4">
+            <h1 className="
+              text-3xl md:text-4xl lg:text-5xl 
+              text-dark font-bold mb-4
+              ">
               Amplie sua presença online com a <span className="text-primary">Malabares</span>
             </h1>
             <p className="text-dark mb-6">

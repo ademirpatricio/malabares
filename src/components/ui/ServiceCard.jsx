@@ -1,19 +1,14 @@
-import homeServicesIcon1 from "../../assets/images/home-services-icon-1.svg";
-import homeServicesIcon2 from "../../assets/images/home-services-icon-2.svg";
-import homeServicesIcon3 from "../../assets/images/home-services-icon-3.svg";
-import homeServicesIcon4 from "../../assets/images/home-services-icon-4.svg";
-
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ title, description, icon }) {
   return (
     <div className="
-      bg-white
-      rounded-[32px]
+      bg-white hover:bg-muted transition duration-300
+      rounded-xl 
       py-8 px-10
-      border border-zinc-200
+      border-2 border-muted
     ">
 
       <img 
-        src={homeServicesIcon1} 
+        src={icon} 
         alt="Ícone de serviço" 
         className="w-16 h-16 mb-4"
       />
