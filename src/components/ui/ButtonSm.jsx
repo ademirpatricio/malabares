@@ -5,7 +5,7 @@ function ButtonSm ({ children, link, target }) {
         border-2 rounded
         text-sm font-bold tracking-widest
         px-8 py-2 gap-4 w-auto
-        flex items-center justify-center 
+        inline-flex items-center justify-center 
         transition-all duration-300
         cursor-pointer
 

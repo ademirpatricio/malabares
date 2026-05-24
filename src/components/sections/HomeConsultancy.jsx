@@ -1,72 +1,80 @@
 import Container from "../layout/Container";
+
 import Button from "../ui/Button";
 
-import heroBg from "../../assets/images/hero-bg.jpg";
-import heroPerson from "../../assets/images/hero-person.png";
+import ctaImage from "../../assets/images/home-consultacy-bg.jpg";
 
-function Hero() {
+function HomeConsultancy() {
 
   return (
 
     <section
-      id="hero"
+      id="homeConsultancy"
       className="
         w-full
-        flex
-        justify-center
+        py-30
       "
     >
 
       <Container>
 
-        <div
-          className="
-            relative
-            overflow-hidden
+        <div className="
+          relative
+          overflow-hidden
 
-            rounded-3xl
+          grid
+          grid-cols-1
+          lg:grid-cols-2
 
-            min-h-[600px]
+          items-center
 
-            grid
-            grid-cols-1
-            lg:grid-cols-[60%_40%]
+          bg-muted
 
-            items-center
+          rounded-3xl
 
-            px-8
-            md:px-16
-            lg:px-24
+          px-8
+          py-12
 
-            py-16
-            lg:py-0
-          "
-          style={{
-            backgroundImage: `url(${heroBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+          lg:px-20
+          lg:py-0
+        ">
 
-          {/* OVERLAY */}
+          {/* BG DECORATION */}
           <div className="
             absolute
-            inset-0
+            right-0
+            top-0
 
-            bg-gradient-to-r
-            from-white/85
-            via-white/65
-            to-white/20
-          " />
+            w-[600px]
+            h-full
 
-          {/* CONTEÚDO */}
+            opacity-20
+
+            pointer-events-none
+          ">
+
+            <div className="
+              absolute
+              inset-0
+
+              bg-[url('/src/assets/images/bg-symbol.svg')]
+              bg-contain
+              bg-no-repeat
+              bg-right
+            " />
+
+          </div>
+
+          {/* TEXTO */}
           <div
             data-aos="fade-right"
             className="
               relative
               z-10
 
-              max-w-[680px]
+              py-10
+
+              max-w-[620px]
             "
           >
 
@@ -75,24 +83,26 @@ function Hero() {
               data-aos="fade-up"
               data-aos-delay="100"
               className="
-                inline-block
-
-                text-secondary
-
-                tracking-[0.3em]
-
-                uppercase
+                text-md
 
                 mb-6
+
+                inline-block
+
+                text-primary
+
+                tracking-[0.25em]
+
+                uppercase
               "
             >
 
-              marketing digital
+              o melhor para o seu negócio
 
             </span>
 
             {/* TÍTULO */}
-            <h1
+            <h2
               data-aos="fade-up"
               data-aos-delay="250"
               className="
@@ -100,23 +110,24 @@ function Hero() {
                 md:text-4xl
                 lg:text-5xl
 
-                leading-widest
-                tracking-tight
-
-                text-dark
                 font-bold
+
+                leading-none
+                tracking-tight
 
                 mb-8
               "
             >
 
-              Amplie sua presença online com a{" "}
-
               <span className="text-primary">
-                Malabares
+                Consultoria gratuita
               </span>
 
-            </h1>
+              <br />
+
+              de Marketing Digital
+
+            </h2>
 
             {/* TEXTO */}
             <p
@@ -129,12 +140,10 @@ function Hero() {
                 text-dark/80
 
                 mb-10
-
-                max-w-[580px]
               "
             >
 
-              Estratégias digitais, páginas de alta conversão e conteúdo pensado para transformar presença online em resultado.
+              Solicite uma <strong>consultoria gratuita</strong> e online sobre o posicionamento da sua empresa no mundo digital.
 
             </p>
 
@@ -144,7 +153,7 @@ function Hero() {
               data-aos-delay="550"
             >
 
-              <Button target="_blank" link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
+              <Button link="/contato">
 
                 ↪ Fala com a gente
 
@@ -163,21 +172,21 @@ function Hero() {
               z-10
 
               flex
-              justify-center
               items-end
-              -mb-17
+              justify-center
             "
           >
 
             <img
-              src={heroPerson}
-              alt="Thayná Aguiar sorrindo"
+              src={ctaImage}
+              alt="Ademir utilizando notebook"
               className="
                 w-full
-                max-w-[580px]
+                max-w-[520px]
 
-                mx-auto
-                mt-10 md:mt-0
+                h-auto
+
+                object-contain
 
                 animate-float
               "
@@ -192,6 +201,7 @@ function Hero() {
     </section>
 
   );
+
 }
 
-export default Hero;
+export default HomeConsultancy;
