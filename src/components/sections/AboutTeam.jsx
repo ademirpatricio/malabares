@@ -5,8 +5,8 @@ import SocialLink from "../ui/SocialLink";
 import thaynaImage from "../../assets/images/about-thayna.jpg";
 import ademirImage from "../../assets/images/about-ademir.jpg";
 
-import icInstagram from "../../assets/images/ic-social-instagram.svg";
-import icLinkedin from "../../assets/images/ic-social-linkedin.svg";
+import icInstagram from "../../assets/images/icons/ic-social-instagram.svg";
+import icLinkedin from "../../assets/images/icons/ic-social-linkedin.svg";
 
 function AboutTeam() {
 

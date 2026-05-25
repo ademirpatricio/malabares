@@ -4,12 +4,33 @@ import Button from "../ui/Button";
 import contactImage from "../../assets/images/about-bg.jpg";
 
 function ContactForm() {
+  const fieldClass = `
+    w-full
+
+    rounded
+
+    border
+    border-muted
+
+    bg-light
+
+    px-6
+    py-5
+
+    outline-none
+
+    transition-all
+    duration-300
+
+    focus:border-primary
+    focus:bg-white
+  `;
 
   return (
 
     <section
       id="contactForm"
-      className="w-full py-30"
+      className="w-full py-15"
     >
 
       <Container>
@@ -20,7 +41,7 @@ function ContactForm() {
             grid-cols-1
             lg:grid-cols-[1.1fr_0.9fr]
 
-            gap-16
+            gap-20
             items-center
           "
         >
@@ -34,12 +55,12 @@ function ContactForm() {
               border
               border-muted
 
-              rounded-3xl
+              rounded-2xl
 
-              p-8
+              p-6
               lg:p-12
 
-              shadow-[0_20px_60px_rgba(0,0,0,0.05)]
+              shadow-[0_20px_60px_rgba(0,0,0,0.03)]
             "
           >
 
@@ -66,8 +87,8 @@ function ContactForm() {
 
               <h2
                 className="
-                  text-3xl
-                  md:text-4xl
+                  text-2xl
+                  md:text-3xl
 
                   font-bold
 
@@ -103,7 +124,7 @@ function ContactForm() {
                 flex
                 flex-col
 
-                gap-6
+                gap-4
               "
             >
 
@@ -111,106 +132,26 @@ function ContactForm() {
               <input
                 type="text"
                 placeholder="Seu nome"
-                className="
-                  w-full
-
-                  rounded-2xl
-
-                  border
-                  border-muted
-
-                  bg-light
-
-                  px-6
-                  py-5
-
-                  outline-none
-
-                  transition-all
-                  duration-300
-
-                  focus:border-primary
-                  focus:bg-white
-                "
+                className={fieldClass}
               />
 
               {/* EMPRESA */}
               <input
                 type="text"
                 placeholder="Empresa ou projeto"
-                className="
-                  w-full
-
-                  rounded-2xl
-
-                  border
-                  border-muted
-
-                  bg-light
-
-                  px-6
-                  py-5
-
-                  outline-none
-
-                  transition-all
-                  duration-300
-
-                  focus:border-primary
-                  focus:bg-white
-                "
+                className={fieldClass}
               />
 
               {/* INSTAGRAM */}
               <input
                 type="text"
                 placeholder="@instagram"
-                className="
-                  w-full
-
-                  rounded-2xl
-
-                  border
-                  border-muted
-
-                  bg-light
-
-                  px-6
-                  py-5
-
-                  outline-none
-
-                  transition-all
-                  duration-300
-
-                  focus:border-primary
-                  focus:bg-white
-                "
+                className={fieldClass}
               />
 
               {/* SERVIÇO */}
               <select
-                className="
-                  w-full
-
-                  rounded-2xl
-
-                  border
-                  border-muted
-
-                  bg-light
-
-                  px-6
-                  py-5
-
-                  outline-none
-
-                  transition-all
-                  duration-300
-
-                  focus:border-primary
-                  focus:bg-white
-                "
+                className={fieldClass}
               >
 
                 <option>
@@ -243,29 +184,7 @@ function ContactForm() {
               <textarea
                 rows="6"
                 placeholder="Conta mais sobre sua ideia..."
-                className="
-                  w-full
-
-                  rounded-2xl
-
-                  border
-                  border-muted
-
-                  bg-light
-
-                  px-6
-                  py-5
-
-                  outline-none
-
-                  resize-none
-
-                  transition-all
-                  duration-300
-
-                  focus:border-primary
-                  focus:bg-white
-                "
+                className={`${fieldClass} resize-none`}
               />
 
               {/* BOTÃO */}
@@ -297,7 +216,7 @@ function ContactForm() {
             <div
               className="
                 overflow-hidden
-                rounded-3xl
+                rounded-2xl
 
                 mb-10
               "
@@ -319,7 +238,7 @@ function ContactForm() {
             {/* TEXO */}
             <h3
               className="
-                text-3xl
+                text-2xl
 
                 font-bold
 
@@ -354,7 +273,7 @@ function ContactForm() {
                 flex
                 flex-col
 
-                gap-4
+                gap-3
               "
             >
 

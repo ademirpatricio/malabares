@@ -9,7 +9,7 @@ function ContactHero() {
       id="contactHero"
       className="
         w-full
-        py-30
+        py-0
       "
     >
 
@@ -60,7 +60,7 @@ function ContactHero() {
               relative
               z-10
 
-              max-w-[900px]
+              max-w-[700px]
             "
           >
 
@@ -86,9 +86,9 @@ function ContactHero() {
             {/* TÍTULO */}
             <h1
               className="
-                text-3xl
-                md:text-4xl
-                lg:text-5xl
+                text-2xl
+                md:text-3xl
+                lg:text-4xl
 
                 font-bold
 
@@ -139,7 +139,7 @@ function ContactHero() {
               </Button>
 
               <a
-                href="https://wa.me/5581999999999"
+                href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

@@ -7,7 +7,6 @@ import InfiniteBanner from "../components/ui/InfiniteBanner";
 import HomeBenefits from "../components/sections/HomeBenefits";
 import HomeClients from "../components/sections/HomeClients";
 import Logos from "../components/ui/Logos";
-import HomeConsultancy from "../components/sections/HomeConsultancy";
 import HomeTestimonials from "../components/sections/HomeTestimonials";
 import WeddingCta from "../components/ui/WeddingCta";
 import Cta from "../components/layout/Cta";

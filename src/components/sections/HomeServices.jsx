@@ -1,11 +1,11 @@
 import Container from "../layout/Container";
 import ServiceCard from "../ui/ServiceCard";
 
-import homeServicesIcon1 from "../../assets/images/home-services-icon-1.svg";
-import homeServicesIcon2 from "../../assets/images/home-services-icon-2.svg";
-import homeServicesIcon3 from "../../assets/images/home-services-icon-3.svg";
-import homeServicesIcon4 from "../../assets/images/home-services-icon-4.svg";
-import homeServicesIcon5 from "../../assets/images/home-services-icon-5.svg";
+import homeServicesIcon1 from "../../assets/images/icons/home-services-icon-1.svg";
+import homeServicesIcon2 from "../../assets/images/icons/home-services-icon-2.svg";
+import homeServicesIcon3 from "../../assets/images/icons/home-services-icon-3.svg";
+import homeServicesIcon4 from "../../assets/images/icons/home-services-icon-4.svg";
+import homeServicesIcon5 from "../../assets/images/icons/home-services-icon-5.svg";
 
 function HomeServices() {
 

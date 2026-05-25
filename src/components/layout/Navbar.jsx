@@ -9,10 +9,10 @@ import SocialLink from "../ui/SocialLink";
 
 import logo from "../../assets/images/logo-malabares.svg";
 
-import icInstagram from "../../assets/images/ic-social-instagram.svg";
-import icBehance from "../../assets/images/ic-social-behance.svg";
-import icLinkedin from "../../assets/images/ic-social-linkedin.svg";
-import icTiktok from "../../assets/images/ic-social-tiktok.svg";
+import icInstagram from "../../assets/images/icons/ic-social-instagram.svg";
+import icBehance from "../../assets/images/icons/ic-social-behance.svg";
+import icLinkedin from "../../assets/images/icons/ic-social-linkedin.svg";
+import icTiktok from "../../assets/images/icons/ic-social-tiktok.svg";
 
 function Navbar() {
 
@@ -108,12 +108,12 @@ function Navbar() {
               Nossos trabalhos
             </NavLink>
 
-            <NavLink href="https://wedding.malabares.com.br">
-              Wedding
-            </NavLink>
-
             <NavLink href="/contato">
               Contato
+            </NavLink>
+
+            <NavLink href="https://wedding.malabares.com.br" target="_blank">
+              Wedding
             </NavLink>
 
           </nav>
@@ -248,16 +248,16 @@ function Navbar() {
 
               <div onClick={() => setIsOpen(false)}>
 
-                <NavLink href="https://wedding.malabares.com.br">
-                  Wedding
+                <NavLink href="/contato">
+                  Contato
                 </NavLink>
 
               </div>
 
               <div onClick={() => setIsOpen(false)}>
 
-                <NavLink href="/contato">
-                  Contato
+                <NavLink href="https://wedding.malabares.com.br" target="_blank">
+                  Wedding
                 </NavLink>
 
               </div>

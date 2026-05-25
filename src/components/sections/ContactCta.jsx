@@ -3,6 +3,12 @@ import Button from "../ui/Button";
 
 function ContactCta() {
 
+  const benefits = [
+    "Atendimento humano",
+    "Estratégia personalizada",
+    "Projetos para todo o Brasil",
+  ];
+
   return (
 
     <section
@@ -19,22 +25,40 @@ function ContactCta() {
       "
     >
 
-      {/* GLOW */}
+      {/* GLOW TOP */}
       <div
         className="
           absolute
-          top-1/2
+          top-0
           left-1/2
 
           -translate-x-1/2
-          -translate-y-1/2
 
-          w-[700px]
-          h-[700px]
+          w-[600px]
+          h-[600px]
 
-          bg-primary/20
+          bg-primary/15
 
           blur-[140px]
+          rounded-full
+
+          pointer-events-none
+        "
+      />
+
+      {/* GLOW SIDE */}
+      <div
+        className="
+          absolute
+          bottom-[-200px]
+          right-[-100px]
+
+          w-[500px]
+          h-[500px]
+
+          bg-secondary/10
+
+          blur-[120px]
           rounded-full
 
           pointer-events-none
@@ -44,12 +68,12 @@ function ContactCta() {
       <Container>
 
         <div
-          data-aos="zoom-in"
+          data-aos="fade-up"
           className="
             relative
             z-10
 
-            max-w-[1000px]
+            max-w-[900px]
             mx-auto
 
             flex
@@ -82,16 +106,18 @@ function ContactCta() {
           {/* TÍTULO */}
           <h2
             className="
-              text-3xl
-              md:text-4xl
-              lg:text-5xl
+              text-2xl
+              md:text-3xl
+              lg:text-4xl
 
               font-bold
 
               leading-tight
               tracking-tight
 
-              mb-10
+              max-w-[760px]
+
+              mb-8
             "
           >
 
@@ -99,17 +125,29 @@ function ContactCta() {
 
           </h2>
 
+          {/* LINHA */}
+          <div
+            className="
+              w-24
+              h-[2px]
+
+              bg-primary/60
+
+              mb-10
+            "
+          />
+
           {/* TEXTO */}
           <p
             className="
               text-[1.25rem]
               leading-[1.6]
 
-              text-white/80
+              text-white/75
 
-              max-w-[760px]
+              max-w-[620px]
 
-              mb-14
+              mb-16
             "
           >
 
@@ -117,54 +155,91 @@ function ContactCta() {
 
           </p>
 
-          {/* MICRO BENEFÍCIOS */}
+          {/* BENEFÍCIOS */}
           <div
             className="
-              flex
-              flex-col
-              md:flex-row
+              grid
+              grid-cols-1
+              md:grid-cols-3
 
-              items-center
-              justify-center
+              gap-5
 
-              gap-4
-              md:gap-10
+              w-full
 
               mb-16
-
-              text-white/70
             "
           >
 
-            <span>
-              ✔ Atendimento humano
-            </span>
+            {benefits.map((benefit, index) => (
 
-            <span>
-              ✔ Estratégia personalizada
-            </span>
+              <div
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
 
-            <span>
-              ✔ Projetos para todo o Brasil
-            </span>
+                className="
+                  backdrop-blur-md
+
+                  bg-white/5
+
+                  border
+                  border-white/10
+
+                  rounded-2xl
+
+                  px-6
+                  py-5
+
+                  text-white/80
+
+                  transition-all
+                  duration-300
+
+                  hover:bg-white/8
+                  hover:border-primary/20
+                "
+              >
+
+                <span
+                  className="
+                    text-primary
+
+                    mr-2
+                  "
+                >
+
+                  ✦
+
+                </span>
+
+                {benefit}
+
+              </div>
+
+            ))}
 
           </div>
 
           {/* CTA */}
           <div
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="300"
           >
 
             <Button
-              link="https://wa.me/5581999999999"
+              link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
               target="_blank"
               className="
-                border-white
+                border-white/20
+
+                bg-white/5
+                backdrop-blur-md
+
                 text-white
 
                 hover:bg-white
                 hover:text-quaternary
+                hover:border-white
               "
             >
 

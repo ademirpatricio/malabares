@@ -4,10 +4,10 @@ import NavLink from "../ui/NavLink";
 import SocialLink from "../ui/SocialLink";
 import ButtonSm from "../ui/ButtonSm";
 
-import icInstagram from "../../assets/images/ic-social-instagram.svg";
-import icBehance from "../../assets/images/ic-social-behance.svg";
-import icLinkedin from "../../assets/images/ic-social-linkedin.svg";
-import icTiktok from "../../assets/images/ic-social-tiktok.svg";
+import icInstagram from "../../assets/images/icons/ic-social-instagram.svg";
+import icBehance from "../../assets/images/icons/ic-social-behance.svg";
+import icLinkedin from "../../assets/images/icons/ic-social-linkedin.svg";
+import icTiktok from "../../assets/images/icons/ic-social-tiktok.svg";
 
 function Footer() {
 
@@ -63,12 +63,12 @@ function Footer() {
               Trabalhos
             </NavLink>
 
-            <NavLink white href="https://wedding.malabares.com.br">
-              Wedding
-            </NavLink>
-
             <NavLink white target="_blank" href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
               Contato
+            </NavLink>
+
+            <NavLink white href="https://wedding.malabares.com.br">
+              Wedding
             </NavLink>
 
           </nav>

@@ -1,7 +1,5 @@
 import aboutBg from "../../assets/images/about-bg.jpg";
 
-import Container from "../layout/Container";
-
 function AboutPicture() {
 
   return (

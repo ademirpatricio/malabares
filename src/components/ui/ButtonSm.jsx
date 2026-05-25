@@ -1,6 +1,9 @@
 function ButtonSm ({ children, link, target }) {
   return (
-    <a href={link} target={target}
+    <a
+      href={link}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className="
         border-2 rounded
         text-sm font-bold tracking-widest

@@ -34,7 +34,7 @@ function ContactFaq() {
       id="contactFaq"
       className="
         w-full
-        py-30
+        py-20
 
         bg-light
       "
@@ -55,7 +55,7 @@ function ContactFaq() {
             className="
               text-center
 
-              mb-20
+              mb-10
             "
           >
 
@@ -79,9 +79,9 @@ function ContactFaq() {
 
             <h2
               className="
-                text-3xl
-                md:text-4xl
-                lg:text-5xl
+                text-2xl
+                md:text-3xl
+                lg:text-4xl
 
                 font-bold
 
@@ -136,15 +136,15 @@ function ContactFaq() {
                   border
                   border-muted
 
-                  rounded-3xl
+                  rounded-xl
 
-                  p-8
+                  p-6
                   lg:p-10
 
                   transition-all
                   duration-300
 
-                  hover:border-primary/20
+                  hover:border-tertiary/20
                   hover:shadow-xl
                 "
               >
@@ -152,13 +152,13 @@ function ContactFaq() {
                 {/* PERGUNTA */}
                 <h3
                   className="
-                    text-2xl
+                    text-xl
 
                     font-bold
 
                     leading-tight
 
-                    mb-5
+                    mb-4
                   "
                 >
 
@@ -169,7 +169,7 @@ function ContactFaq() {
                 {/* RESPOSTA */}
                 <p
                   className="
-                    text-[1.25rem]
+                    text-[1.0rem]
                     leading-[1.6]
 
                     text-dark/70

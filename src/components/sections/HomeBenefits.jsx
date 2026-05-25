@@ -1,9 +1,9 @@
 import Container from "../layout/Container";
 import BenefitsCard from "../ui/BenefitsCard";
 
-import homeBenefitsIcon1 from "../../assets/images/home-benefits-icon-1.svg";
-import homeBenefitsIcon2 from "../../assets/images/home-benefits-icon-2.svg";
-import homeBenefitsIcon3 from "../../assets/images/home-benefits-icon-3.svg";
+import homeBenefitsIcon1 from "../../assets/images/icons/home-benefits-icon-1.svg";
+import homeBenefitsIcon2 from "../../assets/images/icons/home-benefits-icon-2.svg";
+import homeBenefitsIcon3 from "../../assets/images/icons/home-benefits-icon-3.svg";
 
 function HomeBenefits() {
 
