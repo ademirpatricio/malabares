@@ -9,7 +9,7 @@ import logoclient6 from "../../assets/images/logos/logo-client-6.png";
 import logoclient7 from "../../assets/images/logos/logo-client-7.png";
 import logoclient8 from "../../assets/images/logos/logo-client-8.png";
 
-function HomeLogos() {
+function Logos() {
 
   const logos = [
     logoclient1,
@@ -28,7 +28,7 @@ function HomeLogos() {
       id="logos-clients"
       className="
         w-full
-        pt-0 md:pt-10 pb-30
+        py-30
 
         bg-quaternary
       "
@@ -142,4 +142,4 @@ function HomeLogos() {
 
 }
 
-export default HomeLogos;
+export default Logos;

@@ -19,7 +19,7 @@ function SocialLink({ link, title, icon, white }) {
           src={icon}
           alt={title}
           className={`
-            w-9
+            w-8
             h-auto
 
             transition-all

@@ -42,7 +42,7 @@ function WeddingBar() {
       <Container>
 
         <div
-          data-aos="fade-down"
+          
           className="
             relative
             z-10

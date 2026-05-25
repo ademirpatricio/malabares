@@ -16,7 +16,7 @@ function HomeClients() {
       id="homeClients"
       className="
         w-full
-        py-30
+        pt-30 pb-10
 
         bg-quaternary
         text-white

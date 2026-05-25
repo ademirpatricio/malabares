@@ -4,12 +4,12 @@ import Button from "../ui/Button";
 import heroBg from "../../assets/images/hero-bg.jpg";
 import heroPerson from "../../assets/images/hero-person.png";
 
-function Hero() {
+function HomeHero() {
 
   return (
 
     <section
-      id="hero"
+      id="HomeHero"
       className="
         w-full
         flex
@@ -194,4 +194,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HomeHero;

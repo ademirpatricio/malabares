@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Menu, X } from "lucide-react";
 
@@ -39,18 +40,20 @@ function Navbar() {
       <Container>
 
         {/* TOPO */}
-        <div className="
-          flex
-          items-center
-          justify-between
-        ">
+        <div
+          className="
+            flex
+            items-center
+            justify-between
+          "
+        >
 
           {/* LOGO */}
           <div>
 
-            <a
-              href="#hero"
-              aria-label="Voltar para o topo"
+            <Link
+              to="/"
+              aria-label="Voltar para a Home"
               className="
                 inline-block
 
@@ -78,25 +81,30 @@ function Navbar() {
                 "
               />
 
-            </a>
+            </Link>
 
           </div>
 
           {/* MENU DESKTOP */}
-          <nav className="
-            hidden
-            md:flex
+          <nav
+            className="
+              hidden
+              md:flex
 
-            items-center
+              items-center
 
-            gap-2
-          ">
+              gap-2
+            "
+          >
 
-            <NavLink href="https://www.malabares.com.br/sobre">
+            <NavLink href="/sobre">
               Sobre nós
             </NavLink>
 
-            <NavLink href="https://www.behance.net/malabaresmkt" target="_blank">
+            <NavLink
+              href="https://www.behance.net/malabaresmkt"
+              target="_blank"
+            >
               Nossos trabalhos
             </NavLink>
 
@@ -104,19 +112,21 @@ function Navbar() {
               Wedding
             </NavLink>
 
-            <NavLink target="_blank" href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
+            <NavLink href="/contato">
               Contato
             </NavLink>
 
           </nav>
 
           {/* SOCIAL DESKTOP */}
-          <div className="
-            hidden
-            lg:flex
+          <div
+            className="
+              hidden
+              lg:flex
 
-            gap-3
-          ">
+              gap-3
+            "
+          >
 
             <SocialLink
               icon={icInstagram}
@@ -186,66 +196,83 @@ function Navbar() {
           `}
         >
 
-          <div className="
-            bg-white
+          <div
+            className="
+              bg-white
 
-            rounded-2xl
+              rounded-2xl
 
-            shadow-xl
+              shadow-xl
 
-            p-6
+              p-6
 
-            flex
-            flex-col
-
-            items-end
-
-            gap-8
-          ">
-
-            {/* LINKS */}
-            <nav className="
               flex
               flex-col
 
               items-end
 
-              gap-4
-            ">
+              gap-8
+            "
+          >
+
+            {/* LINKS */}
+            <nav
+              className="
+                flex
+                flex-col
+
+                items-end
+
+                gap-4
+              "
+            >
 
               <div onClick={() => setIsOpen(false)}>
-                <NavLink href="#sobre">
+
+                <NavLink href="/sobre">
                   Sobre nós
                 </NavLink>
+
               </div>
 
               <div onClick={() => setIsOpen(false)}>
-                <NavLink href="#trabalhos">
+
+                <NavLink
+                  href="https://www.behance.net/malabaresmkt"
+                  target="_blank"
+                >
                   Nossos trabalhos
                 </NavLink>
+
               </div>
 
               <div onClick={() => setIsOpen(false)}>
+
                 <NavLink href="https://wedding.malabares.com.br">
                   Wedding
                 </NavLink>
+
               </div>
 
               <div onClick={() => setIsOpen(false)}>
-                <NavLink href="#contato">
+
+                <NavLink href="/contato">
                   Contato
                 </NavLink>
+
               </div>
 
             </nav>
 
             {/* REDES MOBILE */}
-            <div className="
-              flex
-              items-center
+            <div
+              className="
+                flex
+                items-center
 
-              gap-3
-            ">
+                gap-3
+              "
+            >
 
               <SocialLink
                 icon={icInstagram}
