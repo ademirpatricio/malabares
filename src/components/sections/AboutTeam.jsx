@@ -240,7 +240,7 @@ function AboutTeam() {
 
             {/* CTA */}
 
-            <Button link="/contato">
+            <Button className="hover:text-white" link="/contato">
 
               ↪ Fala com a gente agora!
 

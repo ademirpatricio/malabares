@@ -1,5 +1,4 @@
 import Container from "../layout/Container";
-import Button from "../ui/Button";
 
 import strategyIcon from "../../assets/images/icons/about-service-icon-1.png";
 import infoproductIcon from "../../assets/images/icons/about-service-icon-2.png";
@@ -163,25 +162,7 @@ function AboutServices() {
 
         </div>
 
-        {/* BOTÃO */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="400"
-          className="
-            flex
-            justify-center
-
-            mt-20
-          "
-        >
-
-          <Button link="/contato">
-
-            ↪ Fala com a gente
-
-          </Button>
-
-        </div>
+        
 
       </Container>
 

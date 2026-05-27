@@ -4,6 +4,8 @@ const Button = ({
   children,
   link,
   target,
+  type = "button",
+  disabled = false,
   className = ""
 }) => {
   const isInternalLink = link?.startsWith("/") && !target;
@@ -37,10 +39,26 @@ const Button = ({
     text-primary
 
     hover:bg-primary
-    hover:text-white
 
     ${className}
   `;
+
+  if (!link) {
+    return (
+      <button
+        type={type}
+        disabled={disabled}
+        className={`${buttonClass} 
+        disabled:cursor-not-allowed
+        disabled:opacity-60
+        disabled:hover:bg-transparent
+        disabled:hover:text-primary
+        disabled:hover:scale-100`}
+      >
+        {children}
+      </button>
+    );
+  }
 
   if (isInternalLink) {
     return (

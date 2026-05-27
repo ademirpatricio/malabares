@@ -137,7 +137,7 @@ function AboutHero() {
                   text-white
 
                   hover:bg-primary
-                  border-primary
+                  hover:border-primary
                   hover:text-white
                 "
               >

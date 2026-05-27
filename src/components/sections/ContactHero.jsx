@@ -132,7 +132,7 @@ function ContactHero() {
               "
             >
 
-              <Button link="#contactForm">
+              <Button className="hover:text-white" link="#contactForm">
 
                 ↪ Solicitar consultoria
 

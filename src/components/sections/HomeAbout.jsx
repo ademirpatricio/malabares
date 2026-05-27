@@ -143,7 +143,7 @@ function HomeAbout() {
               data-aos-delay="700"
             >
 
-              <Button target="_blank" link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
+              <Button className="hover:text-white" target="_blank" link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
 
                 ↪ Quer mais detalhes? Bora conversar!
 

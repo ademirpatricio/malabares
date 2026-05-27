@@ -5,6 +5,11 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import LeadCapture from "./pages/LeadCapture";
+import Thanks from "./pages/Thanks";
+import NotFound from "./pages/NotFound";
+
+import ExitIntent from "./components/ui/ExitIntent";
 
 function RouteEffects() {
   const location = useLocation();
@@ -58,7 +63,24 @@ function App() {
           element={<Contact />}
         />
 
+        <Route
+          path="/diagnostico"
+          element={<LeadCapture />}
+        />
+
+        <Route
+          path="/obrigado"
+          element={<Thanks />}
+        />
+
+        <Route 
+          path="*" 
+          element={<NotFound />} 
+        />
+
       </Routes>
+
+      <ExitIntent />
 
     </BrowserRouter>
 

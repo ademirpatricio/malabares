@@ -9,6 +9,8 @@ import icBehance from "../../assets/images/icons/ic-social-behance.svg";
 import icLinkedin from "../../assets/images/icons/ic-social-linkedin.svg";
 import icTiktok from "../../assets/images/icons/ic-social-tiktok.svg";
 
+import Whatsapp from '../ui/Whatsapp.jsx'
+
 function Footer() {
 
   return (
@@ -55,7 +57,7 @@ function Footer() {
             "
           >
 
-            <NavLink white href="https://www.malabares.com.br/sobre">
+            <NavLink white href="/sobre">
               Sobre
             </NavLink>
 
@@ -63,7 +65,7 @@ function Footer() {
               Trabalhos
             </NavLink>
 
-            <NavLink white target="_blank" href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
+            <NavLink white href="/contato">
               Contato
             </NavLink>
 
@@ -151,6 +153,7 @@ function Footer() {
         </div>
 
       </Container>
+      <Whatsapp />
 
     </footer>
 
