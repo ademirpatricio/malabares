@@ -119,7 +119,7 @@ function Footer() {
             data-aos-delay="400"
           >
 
-            <ButtonSm link="https://www.malabares.com.br/consultoria-de-marketing-digital-gratuita">
+            <ButtonSm link="/diagnostico">
 
               ↪ Consultoria Online
 
