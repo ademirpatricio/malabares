@@ -1,16 +1,96 @@
-# React + Vite
+# 🎪 Malabares MKT & TEC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional da Malabares Marketing, desenvolvido para apresentar a agência, seus serviços, portfólio, áreas de atuação e canais de contato de forma moderna, estratégica e orientada à conversão.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔎 Sobre o Projeto
 
-## React Compiler
+O projeto foi desenvolvido com foco em fortalecer a presença digital da Malabares, destacando sua atuação em marketing digital, branding, desenvolvimento de sites, páginas de vendas, infoprodutos e comunicação estratégica.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A proposta combina design contemporâneo, performance, responsividade e uma experiência de navegação intuitiva, criando um ambiente capaz de gerar autoridade, confiança e oportunidades de negócio.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tecnologias Utilizadas
+
+- Vite
+- React
+- React Router DOM
+- Tailwind CSS
+- AOS (Animate On Scroll)
+
+---
+
+## 🎨 Principais Recursos
+
+- Navegação SPA com React Router
+- Animações de entrada com AOS
+- Estrutura componentizada
+- Layout responsivo
+- Landing pages institucionais
+- Página Sobre
+- Página de Contato
+- Página 404 personalizada
+- SEO otimizado
+- Integração futura com formulário de contato
+
+---
+
+## 📱 Responsividade
+
+O projeto foi desenvolvido seguindo a abordagem mobile-first, garantindo uma experiência consistente em diferentes dispositivos:
+
+- Desktop
+- Notebook
+- Tablet
+- Smartphone
+
+---
+
+## 🎯 Objetivos de Desenvolvimento
+
+- Fortalecer a presença digital da Malabares
+- Apresentar serviços de forma clara e estratégica
+- Facilitar o contato com potenciais clientes
+- Criar uma estrutura escalável para futuras expansões
+- Garantir performance e boa experiência de navegação
+- Aplicar boas práticas de UI, UX e SEO
+
+---
+
+## 🛠 Estrutura do Projeto
+
+```bash
+src/
+├── assets/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+├── pages/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 📌 Status
+
+Em desenvolvimento contínuo.
+
+Novas páginas, integrações e melhorias de SEO estão sendo adicionadas gradualmente.
+
+---
+
+## 🔗 Deploy
+
+https://www.malabares.com.br
+
+---
+
+## 💜 Desenvolvido por
+
+Malabares MKT & TEC
+
+Marketing Digital • Design • Tecnologia
