@@ -1,16 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Button from "./Button";
 
 function ExitIntent() {
 
   const [isVisible, setIsVisible] = useState(false);
+  const hasShownRef = useRef(false);
 
   useEffect(() => {
 
     const alreadyShown = sessionStorage.getItem("malabares-exit-intent");
 
     if (alreadyShown) {
+      hasShownRef.current = true;
       return;
     }
 
@@ -22,13 +24,19 @@ function ExitIntent() {
       }
 
       // Detecta saída pelo topo
-      if (event.clientY <= 0) {
+      if (event.clientY <= 0 && !hasShownRef.current) {
 
+        hasShownRef.current = true;
         setIsVisible(true);
 
         sessionStorage.setItem(
           "malabares-exit-intent",
           "true"
+        );
+
+        document.removeEventListener(
+          "mouseout",
+          handleMouseLeave
         );
 
       }
