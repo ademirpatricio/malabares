@@ -10,6 +10,7 @@ import Thanks from "./pages/Thanks";
 import NotFound from "./pages/NotFound";
 
 import ExitIntent from "./components/ui/ExitIntent";
+import CookieBanner from "./components/ui/CookieBanner";
 
 function RouteEffects() {
   const location = useLocation();
@@ -81,6 +82,7 @@ function App() {
       </Routes>
 
       <ExitIntent />
+      <CookieBanner />
 
     </BrowserRouter>
 
