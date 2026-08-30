@@ -51,8 +51,8 @@ function ExitIntent() {
 
         {/* TEXTO */}
         <p className="text-[1rem] leading-relaxed text-neutral-light text-center mb-10">
-          Se você chegou até aqui, provavelmente já tem algo importante em mente.{" "}
-          <strong className="text-neutral">Vamos transformar isso em algo real.</strong>
+          Se você chegou até aqui, não deixe seu projeto para depois.
+          <strong className="text-neutral"> Vamos transformar isso em algo real.</strong>
         </p>
 
         {/* CTA */}

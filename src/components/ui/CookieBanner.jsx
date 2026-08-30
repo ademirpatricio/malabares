@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Button from "./Button";
 
 function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -42,9 +41,12 @@ function CookieBanner() {
           >
             Recusar
           </button>
-          <Button size="sm" variant="accent" onClick={accept}>
+          <button
+            onClick={accept}
+            className="text-sm font-sora font-semibold px-5 py-2 rounded bg-lemon text-purple hover:bg-lemon-dark transition-colors duration-200"
+          >
             Aceitar
-          </Button>
+          </button>
         </div>
 
       </div>
