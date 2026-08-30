@@ -15,12 +15,12 @@ import Footer from "../components/layout/Footer";
 function Home() {
   return (
     <>
-      <WeddingBar />
+      {/* <WeddingBar />*/}
       <Navbar />
       <HomeHero />
+      <InfiniteBanner />
       <HomeServices />
       <HomeAbout />
-      <InfiniteBanner />
       <HomeBenefits />
       <HomeClients />
       <Logos />

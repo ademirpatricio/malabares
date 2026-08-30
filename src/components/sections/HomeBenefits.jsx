@@ -6,135 +6,61 @@ import homeBenefitsIcon2 from "../../assets/images/icons/home-benefits-icon-2.sv
 import homeBenefitsIcon3 from "../../assets/images/icons/home-benefits-icon-3.svg";
 
 function HomeBenefits() {
-
   return (
-
-    <section
-      id="homeBenefits"
-      className="
-        w-full
-        pt-20 pb-0 md:pb-10
-
-        bg-quaternary
-        text-light
-      "
-    >
-
+    <section id="homeBenefits" className="w-full pt-20 pb-10 bg-purple">
       <Container>
 
         {/* HEADER */}
-        <div
-          data-aos="fade-up"
-          className="
-            w-full
-            text-center
+        <div data-aos="fade-up" className="w-full text-center max-w-[850px] mx-auto">
 
-            max-w-[850px]
-
-            mx-auto
-          "
-        >
-
-          <span
+          {/* EYEBROW — ponto-rótulo */}
+          <div
             data-aos="fade-up"
             data-aos-delay="100"
-            className="
-              text-md
-              mb-6
-
-              inline-block
-
-              text-primary
-
-              tracking-[0.25em]
-
-              uppercase
-            "
+            className="flex items-center justify-center gap-2 mb-6"
           >
-
-            motivos para nos escolher
-
-          </span>
+            <span className="font-sora font-semibold text-sm tracking-[0.2em] uppercase text-lilac">
+              motivos para nos escolher
+            </span>
+          </div>
 
           <h2
             data-aos="fade-up"
             data-aos-delay="250"
-            className="
-              text-2xl
-              md:text-3xl
-              lg:text-4xl
-
-              font-bold
-
-              leading-none
-              tracking-tight
-
-              mb-8
-            "
+            className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white mb-8"
           >
-
             Escolher o nosso time é para quem...
-
           </h2>
 
         </div>
 
         {/* CARDS */}
-        <div className="
-          w-full
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mt-16">
 
-          grid
-          grid-cols-1
-          md:grid-cols-3
-
-          gap-8
-          lg:gap-10
-
-          mt-16
-        ">
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-
+          <div data-aos="fade-up" data-aos-delay="100">
             <BenefitsCard
               icon={homeBenefitsIcon1}
               description="Precisa criar seu produto digital e deseja ser dono do seu próprio negócio"
             />
-
           </div>
 
-          <div
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-
+          <div data-aos="fade-up" data-aos-delay="250">
             <BenefitsCard
               icon={homeBenefitsIcon2}
               description="Tem algo relevante para compartilhar com o mundo"
             />
-
           </div>
 
-          <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-
+          <div data-aos="fade-up" data-aos-delay="400">
             <BenefitsCard
               icon={homeBenefitsIcon3}
               description="Precisa desenvolver o marketing digital de sua empresa ou projeto"
             />
-
           </div>
 
         </div>
-
       </Container>
-
     </section>
-
   );
 }
 

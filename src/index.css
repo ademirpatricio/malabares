@@ -5,29 +5,52 @@ html { scroll-behavior: smooth; }
 @theme {
   
   --font-sora: "Sora", sans-serif;
-  --font-space: "Space Grotesk", sans-serif;
+  --font-archivo: "Archivo Black", sans-serif;
 
-  --color-primary: #ff4158;
-  --color-secondary: #b380db;
-  --color-tertiary: #8d4bfa;
-  --color-quaternary: #400a81;
-  --color-quinary: #240144;
-  --color-accent: #ffdca7;
-  --color-light: #f2ecfe;
-  --color-dark: #302543;
+  --color-pink: #FA1256;
+  --color-pink-dark: #A1002F;
+  --color-pink-light: #F07196;
+
+  --color-purple: #280A4A;
+  --color-purple-dark: #18052E;
+  --color-purple-light: #702ABF;
+
+  --color-lilac: #A26EE4;
+  --color-lilac-dark: #5D1CAF;
+  --color-lilac-light: #C3A7E7;
+
+  --color-magenta: #FF2B8A;
+  --color-magenta-dark: #B30050;
+  --color-magenta-light: #F480B4;
+
+  --color-violet: #6A3CFF;
+  --color-violet-dark: #2D00BD;
+  --color-violet-light: #A38AF5;
+  
+  --color-lemon: #C6FF00;
+  --color-lemon-dark: #779900;
+  --color-lemon-light: #D3F266;
+  
+  --color-beige: #E9DECC;
+  --color-beige-dark: #F9E0B6;
+  --color-beige-light: #FFFCF7;
+
+  --color-neutral: #323137;
+  --color-neutral-dark: #1E1D21;
+  --color-neutral-light: #767482;
   --color-muted: #edf1f8;
-
+  --color-white: #FFFFFF;
 }
 
 @layer base {
   body{
-    color: var(--color-dark);
+    color: var(--color-roxo);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sora);
+    font-family: var(--font-archivo);
   }
   p {
-    font-family: var(--font-space);
+    font-family: var(--font-sora);
     font-size: 1.25rem;
     line-height: 1.6;
     font-weight: 300;
@@ -65,4 +88,12 @@ html { scroll-behavior: smooth; }
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }

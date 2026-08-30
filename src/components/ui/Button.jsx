@@ -1,85 +1,55 @@
 import { Link } from "react-router-dom";
+import { isExternal } from "../../utils";
 
 const Button = ({
   children,
   link,
   target,
-  type = "button",
-  disabled = false,
-  className = ""
+  className = "",
+  variant = "primary",
+  size = "default",
 }) => {
-  const isInternalLink = link?.startsWith("/") && !target;
-  const buttonClass = `
-    border-2
-    rounded
 
-    text-md
-    md:text-xl
+  const variants = {
+    primary:   "bg-pink hover:bg-pink-dark text-white",
+    secondary: "bg-violet hover:bg-violet-dark text-white",
+    accent:    "bg-lemon hover:bg-lemon-dark text-purple",
+    outline:   "border-2 border-pink text-pink hover:bg-pink hover:text-white",
+    ghost:     "text-pink border-b-2 border-pink hover:text-purple hover:border-purple pb-0.5",
+    disabled:  "bg-neutral text-neutral-light pointer-events-none opacity-60",
+  };
 
-    font-bold
-    tracking-wide
-    text-center
+  const sizes = {
+    default: "px-10 py-5 text-lg tracking-[0.02em]",
+    sm:      "px-6 py-2 text-sm",
+  };
 
-    px-10
-    py-5
-
-    gap-4
-    w-auto
-
-    inline-flex
-    items-center
-    justify-center
-
-    transition-all
-    duration-300
-
-    cursor-pointer
-
-    border-primary
-    text-primary
-
-    hover:bg-primary
-
+  const base = `
+    rounded font-sora font-semibold tracking-wide
+    w-auto text-center inline-flex justify-center items-center gap-2
+    transition-all duration-300 cursor-pointer
+    ${variants[variant]}
+    ${sizes[size]}
     ${className}
   `;
 
-  if (!link) {
+  if (isExternal(link)) {
     return (
-      <button
-        type={type}
-        disabled={disabled}
-        className={`${buttonClass} 
-        disabled:cursor-not-allowed
-        disabled:opacity-60
-        disabled:hover:bg-transparent
-        disabled:hover:text-primary
-        disabled:hover:scale-100`}
+      <a
+        href={link}
+        target={target}
+        rel={target === "_blank" ? "noopener noreferrer" : undefined}
+        className={base}
       >
         {children}
-      </button>
-    );
-  }
-
-  if (isInternalLink) {
-    return (
-      <Link
-        to={link}
-        className={buttonClass}
-      >
-        {children}
-      </Link>
+      </a>
     );
   }
 
   return (
-    <a
-      href={link}
-      target={target}
-      rel={target === "_blank" ? "noopener noreferrer" : undefined}
-      className={buttonClass}
-    >
+    <Link to={link} target={target} className={base}>
       {children}
-    </a>
+    </Link>
   );
 };
 

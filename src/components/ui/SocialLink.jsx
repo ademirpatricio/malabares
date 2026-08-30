@@ -2,11 +2,7 @@ function SocialLink({ link, title, icon, white }) {
 
   return (
 
-    <div className="
-      flex
-      flex-row
-      gap-5
-    ">
+    <div className="flex flex-row gap-4">
 
       <a
         href={link}
@@ -18,15 +14,7 @@ function SocialLink({ link, title, icon, white }) {
         <img
           src={icon}
           alt={title}
-          className={`
-            w-8
-            h-auto
-
-            transition-all
-            duration-300
-
-            hover:opacity-75
-
+          className={`w-8 h-auto transition-all duration-300 hover:opacity-75
             ${
               white
                 ? "brightness-0 invert"

@@ -1,5 +1,4 @@
 import Container from "../layout/Container";
-
 import ImageSlider from "../ui/ImageSlider";
 import Button from "../ui/Button";
 
@@ -9,165 +8,73 @@ import client3 from "../../assets/images/home-clients-image-3.jpg";
 import client4 from "../../assets/images/home-clients-image-4.jpg";
 
 function HomeClients() {
-
   return (
-
-    <section
-      id="homeClients"
-      className="
-        w-full
-        pt-30 pb-10
-
-        bg-quaternary
-        text-white
-      "
-    >
-
+    <section id="homeClients" className="w-full pt-30 pb-10 bg-purple text-white">
       <Container>
-
-        <div className="
-          grid
-          grid-cols-1
-          md:grid-cols-2
-
-          gap-16
-          lg:gap-24
-
-          items-center
-        ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
 
           {/* CONTEÚDO */}
-          <div
-            data-aos="fade-right"
-            className="
-              w-full
-              max-w-[620px]
-            "
-          >
+          <div data-aos="fade-right" className="w-full max-w-[620px]">
 
-            {/* EYEBROW */}
-            <span
+            {/* EYEBROW — ponto-rótulo */}
+            <div
               data-aos="fade-up"
               data-aos-delay="100"
-              className="
-                text-md
-                mb-6
-
-                inline-block
-
-                text-primary
-
-                tracking-[0.25em]
-
-                uppercase
-              "
+              className="flex items-center gap-2 mb-6"
             >
-
-              ⮑ nossos clientes e parceiros
-
-            </span>
+              <span className="font-sora font-semibold text-sm tracking-[0.2em] uppercase text-lilac">
+                nossos clientes e parceiros
+              </span>
+            </div>
 
             {/* TÍTULO */}
             <h2
               data-aos="fade-up"
               data-aos-delay="250"
-              className="
-                text-2xl
-                md:text-3xl
-                lg:text-4xl
-
-                font-bold
-
-                leading-none
-                tracking-tight
-
-                mb-8
-              "
+              className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white mb-8"
             >
-
               Quem já trabalhou e confia em nossa equipe
-
             </h2>
 
             {/* TEXTO */}
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="
-                text-[1.25rem]
-                leading-[1.6]
-
-                text-white/85
-
-                mb-6
-              "
+              className="text-[1.1rem] leading-relaxed text-lilac-light mb-6"
             >
-
               Cada cliente é tratado como um parceiro estratégico e temos orgulho de trabalhar e fazer parte da trajetória de cada um deles.
-
             </p>
 
             <p
               data-aos="fade-up"
               data-aos-delay="550"
-              className="
-                text-[1.25rem]
-                leading-[1.6]
-
-                text-white/85
-
-                mb-10
-              "
+              className="text-[1.1rem] leading-relaxed text-lilac-light mb-10"
             >
-
               Estamos comprometidos em entregar resultados positivos em diversos nichos.
-
             </p>
 
             {/* BOTÃO */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="700"
-            >
-
-              <Button className="hover:text-white" target="_blank" link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares">
-
-                ↪ Bora trocar umas ideias?
-
+            <div data-aos="fade-up" data-aos-delay="700">
+              <Button
+                target="_blank"
+                variant="accent"
+                link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
+              >
+                Bora trocar umas ideias? ⤏
               </Button>
-
             </div>
 
           </div>
 
           {/* SLIDER */}
-          <div
-            data-aos="fade-left"
-            data-aos-delay="300"
-            className="
-              relative
-            "
-          >
-
-            <ImageSlider
-              images={[
-                client1,
-                client2,
-                client3,
-                client4
-              ]}
-            />
-
+          <div data-aos="fade-left" data-aos-delay="300" className="relative">
+            <ImageSlider images={[client1, client2, client3, client4]} />
           </div>
 
         </div>
-
       </Container>
-
     </section>
-
   );
-
 }
 
 export default HomeClients;

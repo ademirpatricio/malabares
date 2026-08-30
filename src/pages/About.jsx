@@ -11,7 +11,6 @@ import Footer from "../components/layout/Footer";
 function About() {
   return (
     <>
-        <WeddingBar />
         <Navbar />
         <AboutHero />
         <AboutServices />

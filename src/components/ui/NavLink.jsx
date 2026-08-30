@@ -1,47 +1,43 @@
 import { Link } from "react-router-dom";
+import { isExternal } from "../../utils";
 
-function NavLink({ href, children, title, white, target }) {
-  const isInternalLink = href?.startsWith("/") && !target;
-  const linkClass = `
-    font-bold
-    text-lg
+function NavLink({ 
+  href, 
+  children,
+  target,  
+  title, 
+  variant = "primary",
+}) {
 
-    px-3
-    py-2
+  const variants = {
+    primary:   "text-pink hover:text-pink-dark hover:border-pink-dark",
+    secondary: "text-violet hover:text-violet-dark hover:border-violet-dark",
+    accent:    "text-lemon hover:text-lemon-dark hover:border-lemon-dark",
+    white:     "text-white hover:text-pink hover:border-pink",
+  };
 
-    rounded-md
+  const base = `font-sora font-semibold text-lg px-3 py-2 tracking-[0.02em]
+    border-b-2 border-transparent
+    transition-colors duration-200 ${variants[variant]}`;
 
-    transition-colors
-
-    ${
-      white
-        ? "text-white hover:text-white hover:bg-white/10"
-        : "text-dark hover:text-tertiary hover:bg-light"
-    }
-  `;
-
-  if (isInternalLink) {
+  if (isExternal(href)) {
     return (
-      <Link
-        to={href}
+      <a
+        href={href}
         title={title}
-        className={linkClass}
+        target={target}
+        rel={target === "_blank" ? "noopener noreferrer" : undefined}
+        className={base}
       >
         {children}
-      </Link>
+      </a>
     );
   }
 
   return (
-    <a
-      href={href}
-      title={title}
-      target={target}
-      rel={target === "_blank" ? "noopener noreferrer" : undefined}
-      className={linkClass}
-    >
+    <Link to={href} title={title} target={target} className={base}>
       {children}
-    </a>
+    </Link>
   );
 }
 

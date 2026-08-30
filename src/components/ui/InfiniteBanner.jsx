@@ -12,22 +12,9 @@ function InfiniteBanner() {
 
   return (
 
-    <section className="
-      w-full
-      overflow-hidden
-
-      bg-[#240144]
-
-      py-8
-    ">
-
-      <div className="
-        flex
-        whitespace-nowrap
-
-        animate-marquee
-      ">
-
+    <section className="w-full overflow-hidden bg-violet py-8">
+      <div className="flex whitespace-nowrap animate-marquee">
+        
         {[...items, ...items].map((item, index) => (
 
           <div
@@ -52,7 +39,7 @@ function InfiniteBanner() {
             <span>{item}</span>
 
             <span className="
-              text-[#ab7cdd]
+              text-lilac
               ml-10
             ">
               ✦

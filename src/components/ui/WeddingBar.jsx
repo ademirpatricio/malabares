@@ -1,5 +1,5 @@
 import Container from "../layout/Container";
-import ButtonSm from "../ui/ButtonSm";
+import Button from "./Button";
 
 import weddingBarBg from "../../assets/images/wedding-bar-bg.jpg";
 
@@ -36,6 +36,7 @@ function WeddingBar() {
 
         
 
+        bg-black/40
         backdrop-blur-sm
       " />
 
@@ -74,20 +75,20 @@ function WeddingBar() {
 
             💕 Transforme seu casamento com uma{" "}
 
-            <span className="font-bold">
+            <span className="font-semibold">
               identidade visual única e personalizada
             </span>
 
           </h4>
 
-          <ButtonSm
+          <Button variant="outline" size="sm"
             link="https://wedding.malabares.com.br"
             target="_blank"
           >
 
             ↪ Malabares Wedding
 
-          </ButtonSm>
+          </Button>
 
         </div>
 
