@@ -10,7 +10,7 @@ function HomeAbout() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 lg:gap-20 items-center">
 
           {/* IMAGEM */}
-          <div data-aos="fade-right" className="relative">
+          <div data-aos="fade" className="relative">
             <img
               src={homeAboutImage}
               alt="Thayná e Ademir sorrindo"
@@ -19,7 +19,7 @@ function HomeAbout() {
           </div>
 
           {/* CONTEÚDO */}
-          <div data-aos="fade-left" className="max-w-[620px]">
+          <div data-aos="fade" className="max-w-[620px]">
 
             {/* EYEBROW — ponto-rótulo */}
             <div

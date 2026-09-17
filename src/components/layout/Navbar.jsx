@@ -24,6 +24,14 @@ function IcClose({ size = 24, className = "" }) {
 function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Detecta scroll para esconder o logo
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Trava o scroll — scrollbar-gutter: stable no CSS evita o salto de layout
   useEffect(() => {
@@ -34,15 +42,15 @@ function Navbar() {
   return (
     <>
       {/* HEADER — logo + CTA + botão abrir */}
-      <header className="fixed top-0 w-full pt-6 md:pt-12 z-[50]">
+      <header className={`fixed top-0 w-full z-[50] transition-all duration-500 ${scrolled ? "pt-3 md:pt-4" : "pt-6 md:pt-12"}`}>
         <Container>
           <div className="flex items-center justify-between">
 
             {/* LOGO */}
             <Link to="/" aria-label="Voltar para a Home"
-              className="inline-block hover:opacity-80 transition-opacity duration-300">
+              className={`inline-block transition-all duration-500 ${scrolled ? "opacity-0 pointer-events-none" : "opacity-100 hover:opacity-80"}`}>
               <img src={logo} alt="Logo da Malabares"
-                className="w-[180px] md:w-[220px] h-auto" />
+                className="w-[140px] md:w-[200px] h-auto" />
             </Link>
 
             {/* DIREITA — CTA + hambúrguer */}
@@ -53,7 +61,7 @@ function Navbar() {
                 href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-3 pl-6 pr-2 py-2 rounded-full border-2 border-white text-white hover:text-purple font-sora font-semibold text-md tracking-widest hover:bg-white transition-colors duration-300"
+                className={`hidden md:flex items-center gap-3 pl-6 pr-2 py-2 rounded-full border-2 font-sora font-semibold text-md tracking-widest transition-colors duration-300 ${scrolled ? "border-white bg-white text-purple shadow-md hover:bg-transparent hover:text-white" : "border-white text-white hover:bg-white hover:text-purple"}`}
               >
                 Fala com a gente
                 <span className="w-9 h-9 bg-lemon rounded-full flex items-center justify-center text-purple">
@@ -61,13 +69,13 @@ function Navbar() {
                 </span>
               </a>
 
-              {/* HAMBÚRGUER — só aparece quando menu fechado */}
+              {/* HAMBÚRGUER */}
               <button
                 onClick={() => setIsOpen(true)}
                 aria-label="Abrir menu"
-                className="text-white"
+                className={`w-14 h-14 rounded-full border-2 border-white flex items-center justify-center cursor-pointer transition-colors duration-300 ${scrolled ? "bg-white text-purple hover:bg-transparent hover:text-white shadow-md" : "text-white hover:bg-white hover:text-purple"}`}
               >
-                <IcMenu size={28} className="text-white" />
+                <IcMenu size={22} className="text-current" />
               </button>
 
             </div>

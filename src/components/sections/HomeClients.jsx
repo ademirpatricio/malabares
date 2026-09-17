@@ -14,7 +14,7 @@ function HomeClients() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
 
           {/* CONTEÚDO */}
-          <div data-aos="fade-right" className="w-full max-w-[620px]">
+          <div data-aos="fade" className="w-full max-w-[620px]">
 
             {/* EYEBROW — ponto-rótulo */}
             <div
@@ -67,7 +67,7 @@ function HomeClients() {
           </div>
 
           {/* SLIDER */}
-          <div data-aos="fade-left" data-aos-delay="300" className="relative">
+          <div data-aos="fade" data-aos-delay="300" className="relative">
             <ImageSlider images={[client1, client2, client3, client4]} />
           </div>
 

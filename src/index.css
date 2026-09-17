@@ -97,3 +97,14 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
+
+/* HERO — background responsivo */
+#HomeHero {
+  background-image: url('./assets/images/hero-background-mobile.jpg');
+}
+
+@media (min-width: 768px) {
+  #HomeHero {
+    background-image: url('./assets/images/hero-background.jpg');
+  }
+}
