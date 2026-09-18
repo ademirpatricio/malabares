@@ -126,7 +126,7 @@ function HomeHero() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-lemon transition-colors duration-300"
               >
-                <img src={icon} alt={title} className="w-4 h-4 md:w-5 md:h-5 object-contain" />
+                <img src={icon} alt={title} className="w-8 h-8 object-contain" />
               </a>
             ))}
           </div>
