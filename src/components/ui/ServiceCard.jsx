@@ -2,12 +2,13 @@ function ServiceCard({ title, description, icon }) {
   return (
     <div className="
       h-full
-      bg-white
+      bg-purple-dark
       transition-all duration-300
       rounded-xl
       py-8 px-10
       md:py-10 md:px-12
-      border-2 border-muted hover:bg-muted
+      bg-purple/50
+      hover:bg-purple/80
       flex flex-col
     ">
       <img
@@ -16,11 +17,13 @@ function ServiceCard({ title, description, icon }) {
         className="w-16 h-16 mb-6"
       />
 
-      <h3 className="text-xl lg:text-2xl leading-tight tracking-tight mb-4 text-purple">
+      <h3 className="text-xl lg:text-2xl leading-tight 
+      tracking-tight mb-4 text-white font-sora">
         {title}
       </h3>
 
-      <p className="text-[1.1rem] leading-relaxed text-neutral-light">
+      <p className="text-base 
+      text-lilac-light font-sora font-light">
         {description}
       </p>
     </div>

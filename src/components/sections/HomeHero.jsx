@@ -1,7 +1,12 @@
 import Container from "../layout/Container";
 
 import heroThayna from "../../assets/images/hero-thayna.png";
+import heroAsset from "../../assets/images/hero-asset.svg";
 import IcArrow from "../ui/IcArrow";
+import IcArrowDown from "../ui/IcArrowDown";
+import avatar1 from "../../assets/images/avatar-1.png";
+import avatar2 from "../../assets/images/avatar-2.png";
+import avatar3 from "../../assets/images/avatar-3.png";
 
 import icInstagram from "../../assets/images/icons/ic-social-instagram.svg";
 import icBehance from "../../assets/images/icons/ic-social-behance.svg";
@@ -45,7 +50,7 @@ function HomeHero() {
             <h1
               data-aos="fade-up"
               data-aos-delay="150"
-              className="font-archivo text-white uppercase leading-[1.3] text-[38px] md:text-[55px]"
+              className="font-archivo text-white uppercase leading-[1.3] text-[38px] md:text-[55px] mb-6"
             >
               Equilibrar
               <br />
@@ -62,6 +67,22 @@ function HomeHero() {
               <br />
               Não Sorte.
             </h1>
+
+            {/* CTA */}
+            <a
+              data-aos="fade-up"
+              data-aos-delay="350"
+              rel="noopener noreferrer"
+              href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
+              className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group hidden md:flex"
+            >
+              Fala com a gente agora
+              <span className="w-10 h-10 border-2 border-white rounded-full flex
+              items-center justify-center transition-colors group-hover:bg-lemon group-hover:text-purple group-hover:border-lemon">
+                <IcArrow size={16} />
+              </span>
+            </a>
+
           </div>
 
           {/* COLUNA DIREITA — texto de apoio + CTA */}
@@ -78,12 +99,13 @@ function HomeHero() {
             <a
               data-aos="fade-up"
               data-aos-delay="400"
-              href="/sobre"
+              href="#homeServices"
               className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
             >
               Saiba mais
-              <span className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center transition-colors group-hover:bg-white group-hover:text-pink">
-                <IcArrow size={16} />
+              <span className="w-10 h-10 border-2 border-white rounded-full flex items-center 
+              justify-center transition-colors group-hover:bg-lemon group-hover:text-purple group-hover:border-lemon">
+                <IcArrowDown size={16} />
               </span>
             </a>
           </div>
@@ -94,11 +116,23 @@ function HomeHero() {
             data-aos-delay="200"
             src={heroThayna}
             alt="Thayná Aguiar sorrindo"
-            className="md:hidden mt-auto w-full max-h-[45vh] object-contain object-bottom pointer-events-none"
+            className="md:hidden mt-auto w-full max-h-[45vh] 
+            object-contain object-bottom pointer-events-none z-10"
           />
 
         </div>
       </Container>
+
+      {/* ASSET CIRCULAR — atrás da Thayná */}
+      <img
+        src={heroAsset}
+        alt=""
+        aria-hidden="true"
+        className=" md:block absolute -translate-x-1/2  
+        pointer-events-none animate-spin-slow 
+        top-[65%] left-[50%] w-[250px] h-[250px] z-5
+        md:top-[22%] md:left-[60%] md:w-[220px] md:h-[220px]"
+      />
 
       {/* IMAGEM DESKTOP — absolute, permanece como estava */}
       <img
@@ -106,29 +140,59 @@ function HomeHero() {
         data-aos-delay="200"
         src={heroThayna}
         alt="Thayná Aguiar sorrindo"
-        className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 object-contain object-bottom pointer-events-none h-[90%]"
+        className="hidden md:block absolute bottom-0 
+        left-1/2 -translate-x-1/2 object-contain object-bottom 
+        pointer-events-none h-[90%] z-10"
       />
 
-      {/* REDES SOCIAIS — desktop only */}
-      <div className="absolute bottom-12 left-0 right-0">
+      {/* RODAPÉ DO HERO — prova social + redes sociais */}
+      <div className="absolute bottom-16 left-0 right-0">
         <Container>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            className="hidden md:flex justify-end items-center gap-3"
-          >
-            {socials.map(({ icon, title, link }) => (
-              <a
-                key={title}
-                href={link}
-                title={title}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-lemon transition-colors duration-300"
-              >
-                <img src={icon} alt={title} className="w-8 h-8 object-contain" />
-              </a>
-            ))}
+          <div className="hidden md:flex items-center justify-between">
+
+            {/* PROVA SOCIAL */}
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="flex items-center gap-3"
+            >
+              <div className="flex items-center gap-5">
+                <div className="flex -space-x-3">
+                  <img src={avatar1} alt="Cliente" className="w-10 h-10 rounded-full object-cover " />
+                  <img src={avatar2} alt="Cliente" className="w-10 h-10 rounded-full object-cover " />
+                  <img src={avatar3} alt="Cliente" className="w-10 h-10 rounded-full object-cover " />
+                </div>
+                <div className="text-left flex align-center gap-2">
+                  <p className="font-sora font-medium text-white text-3xl leading-none">+50</p>
+                  <p className="font-sora text-white/80 text-xs leading-tight">clientes<br/>atendidos</p>
+                </div>
+              </div>
+              <div className="text-left flex items-center gap-2">
+                <p className="font-sora font-medium text-white text-3xl leading-none">+10</p>
+                <p className="font-sora text-white/80 text-xs leading-tight">anos de<br/>mercado</p>
+              </div>
+            </div>
+
+            {/* REDES SOCIAIS */}
+            <div
+              data-aos="fade-up"
+              data-aos-delay="550"
+              className="flex items-center gap-3"
+            >
+              {socials.map(({ icon, title, link }) => (
+                <a
+                  key={title}
+                  href={link}
+                  title={title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-lemon transition-colors duration-300"
+                >
+                  <img src={icon} alt={title} className="w-8 h-8 object-contain" />
+                </a>
+              ))}
+            </div>
+
           </div>
         </Container>
       </div>

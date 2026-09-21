@@ -5,7 +5,7 @@ import homeAboutImage from "../../assets/images/home-about-image.jpg";
 
 function HomeAbout() {
   return (
-    <section id="homeAbout" className="w-full pt-15 pb-20 md:py-30 bg-white">
+    <section id="homeAbout" className="w-full pt-15 pb-20 md:pb-30 md-pt-6 bg-purple-dark">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 lg:gap-20 items-center">
 
@@ -36,7 +36,7 @@ function HomeAbout() {
             <h2
               data-aos="fade-up"
               data-aos-delay="250"
-              className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-purple mb-8"
+              className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white mb-8"
             >
               Marketing Digital não precisa ser complicado
             </h2>
@@ -45,7 +45,7 @@ function HomeAbout() {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="text-[1.1rem] leading-relaxed text-neutral-light mb-6"
+              className="text-[1.1rem] leading-relaxed text-lilac-light mb-6"
             >
               Somos a <strong className="text-pink">Malabares</strong>, uma agência que acredita que marketing digital não precisa ser complicado. Aqui, você fala direto com quem faz e entende cada passo do processo.
             </p>
@@ -53,7 +53,7 @@ function HomeAbout() {
             <p
               data-aos="fade-up"
               data-aos-delay="550"
-              className="text-[1.1rem] leading-relaxed text-neutral-light mb-10"
+              className="text-[1.1rem] leading-relaxed text-lilac-light mb-10"
             >
               <strong>Nosso objetivo é claro:</strong> fazer sua marca crescer com ideias simples, criativas e focadas em resultados.
             </p>

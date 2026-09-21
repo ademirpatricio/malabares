@@ -10,7 +10,7 @@ import homeServicesIcon5 from "../../assets/images/icons/home-services-icon-5.sv
 
 function HomeServices() {
   return (
-    <section id="homeServices" className="w-full pt-24 pb-24 bg-white">
+    <section id="homeServices" className="w-full pt-24 pb-24 bg-purple-dark">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -22,7 +22,8 @@ function HomeServices() {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-purple"
+              className="text-2xl md:text-3xl lg:text-4xl 
+              leading-tight tracking-tight text-white"
             >
               Vamos te ajudar com toda a comunicação do seu projeto
             </h2>

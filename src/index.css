@@ -108,3 +108,13 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
     background-image: url('./assets/images/hero-background.jpg');
   }
 }
+
+/* HERO — elemento circular girando */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 14s linear infinite;
+}

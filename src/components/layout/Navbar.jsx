@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import IcArrow from "../ui/IcArrow";
 import IcMenu from "../ui/IcMenu";
 
 import Container from "../layout/Container";
@@ -53,29 +52,19 @@ function Navbar() {
                 className="w-[140px] md:w-[200px] h-auto" />
             </Link>
 
-            {/* DIREITA — CTA + hambúrguer */}
+            {/* DIREITA — hambúrguer */}
             <div className="flex items-center gap-4">
-
-              {/* CTA */}
-              <a
-                href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`hidden md:flex items-center gap-3 pl-6 pr-2 py-2 rounded-full border-2 font-sora font-semibold text-md tracking-widest transition-colors duration-300 ${scrolled ? "border-white bg-white text-purple shadow-md hover:bg-transparent hover:text-white" : "border-white text-white hover:bg-white hover:text-purple"}`}
-              >
-                Fala com a gente
-                <span className="w-9 h-9 bg-lemon rounded-full flex items-center justify-center text-purple">
-                  <IcArrow size={16} />
-                </span>
-              </a>
 
               {/* HAMBÚRGUER */}
               <button
                 onClick={() => setIsOpen(true)}
                 aria-label="Abrir menu"
-                className={`w-14 h-14 rounded-full border-2 border-white flex items-center justify-center cursor-pointer transition-colors duration-300 ${scrolled ? "bg-white text-purple hover:bg-transparent hover:text-white shadow-md" : "text-white hover:bg-white hover:text-purple"}`}
+                className={`w-14 h-14 rounded-full
+                border-white flex items-center justify-center cursor-pointer 
+                transition-colors duration-300 
+                ${scrolled ? "bg-white text-purple hover:bg-transparent hover:text-white shadow-md" : "text-white hover:bg-white hover:text-purple"}`}
               >
-                <IcMenu size={22} className="text-current" />
+                <IcMenu size={30} className="text-current" />
               </button>
 
             </div>
