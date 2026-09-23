@@ -59,8 +59,8 @@ function Navbar() {
               <button
                 onClick={() => setIsOpen(true)}
                 aria-label="Abrir menu"
-                className={`w-14 h-14 rounded-full
-                border-white flex items-center justify-center cursor-pointer 
+                className={`w-14 h-14 rounded
+                flex items-center justify-center cursor-pointer 
                 transition-colors duration-300 
                 ${scrolled ? "bg-white text-purple hover:bg-transparent hover:text-white shadow-md" : "text-white hover:bg-white hover:text-purple"}`}
               >

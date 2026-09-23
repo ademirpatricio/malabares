@@ -51,8 +51,8 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
   }
   p {
     font-family: var(--font-sora);
-    font-size: 1.25rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: 300;
   }
   button {
@@ -60,6 +60,11 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
   }
   strong {
     font-weight: 600;
+  }
+
+  /* Componente - SectionCard */
+  p.card {
+    font-size: 0.9rem;
   }
 }
 
@@ -117,4 +122,23 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 
 .animate-spin-slow {
   animation: spin-slow 14s linear infinite;
+}
+
+.underline-slide {
+  position: relative;
+}
+
+.underline-slide::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.group:hover .underline-slide::after {
+  width: 100%;
 }

@@ -1,5 +1,6 @@
 import Container from "../layout/Container";
 import NavLink from "../ui/NavLink";
+import homeServicesBg from "../../assets/images/home-services-bg.jpg";
 import ServiceCard from "../ui/ServiceCard";
 
 import homeServicesIcon1 from "../../assets/images/icons/home-services-icon-1.svg";
@@ -10,71 +11,90 @@ import homeServicesIcon5 from "../../assets/images/icons/home-services-icon-5.sv
 
 function HomeServices() {
   return (
-    <section id="homeServices" className="w-full pt-24 pb-24 bg-purple-dark">
+    <section id="homeServices" className="w-full pt-24 pb-24" style={{ backgroundImage: `url(${homeServicesBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
           {/* HEADER */}
           <div
             data-aos="fade-right"
-            className="w-full text-center md:text-left flex flex-col justify-center gap-8"
+            className="w-full text-left flex flex-col justify-center gap-8"
           >
+
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-2xl md:text-3xl lg:text-4xl 
-              leading-tight tracking-tight text-white"
+              className="text-2xl md:text-3xl lg:text-4xl font-archivo font-bold
+              leading-tight text-white"
             >
-              Vamos te ajudar com toda a comunicação do seu projeto
+              Sua marca não precisa <span className="text-pink"> fazer tudo sozinha.</span>
             </h2>
 
-            <div data-aos="fade-up" data-aos-delay="250">
-              <NavLink href="/sobre">Saiba como ⤏</NavLink>
-            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="leading-relaxed text-lilac-light"
+            >
+              Da estratégia à execução, juntamos criatividade,
+              comunicação e tecnologia para construir uma presença digital
+              que tenha a ver com o seu negócio e com quem você quer alcançar.
+            </p>
+
+
           </div>
 
           {/* CARD 1 */}
           <div data-aos="fade-up" data-aos-delay="100">
             <ServiceCard
-              icon={homeServicesIcon1}
-              title="Planejamento de Comunicação"
-              description="Roteiro pra fazer sua marca brilhar."
+              number="01"
+              title="Estratégia & Planejamento"
+              description="Antes de criar, a gente entende onde 
+              você quer chegar. Planejamos sua comunicação para 
+              transformar objetivos em ações que fazem sentido."
             />
           </div>
 
           {/* CARD 2 */}
           <div data-aos="fade-up" data-aos-delay="200">
             <ServiceCard
-              icon={homeServicesIcon2}
-              title="Redes Sociais"
-              description="Aquele conteúdo que conecta de verdade."
+              number="02"
+              title="Conteúdo & Redes Sociais"
+              description="Conteúdo não serve só para preencher 
+              calendário. Criamos presença, relacionamento e uma 
+              comunicação que conversa com o seu público."
             />
           </div>
 
           {/* CARD 3 */}
           <div data-aos="fade-up" data-aos-delay="300">
             <ServiceCard
-              icon={homeServicesIcon3}
-              title="Identidade Visual"
-              description="Sua marca do jeitinho que ela merece."
+              number="03"
+              title="Marca & Identidade Visual"
+              description="Do posicionamento à identidade, construímos 
+              marcas que sabem quem são, como querem ser percebidas e 
+              por que devem ser lembradas."
             />
           </div>
 
           {/* CARD 4 */}
           <div data-aos="fade-up" data-aos-delay="400">
             <ServiceCard
-              icon={homeServicesIcon4}
-              title="Páginas que Vendem"
-              description="Do clique ao carrinho, a gente cuida de tudo."
+              number="04"
+              title="Sites & Landing Pages"
+              description="Sites pensados para comunicar, conectar e 
+              vender. Design, conteúdo e tecnologia trabalhando 
+              juntos em uma experiência que representa sua marca."
             />
           </div>
 
           {/* CARD 5 */}
           <div data-aos="fade-up" data-aos-delay="500">
             <ServiceCard
-              icon={homeServicesIcon5}
-              title="Infoprodutos"
-              description="Se você ensina, a gente ajuda a vender."
+              number="05"
+              title="Produtos Digitais"
+              description="Estruturamos estatégia, páginas 
+              e materiais para transformar seu conhecimento em
+              novos produtos e oportunidades de negócio."
             />
           </div>
 

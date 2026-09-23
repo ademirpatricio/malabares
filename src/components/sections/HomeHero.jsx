@@ -76,10 +76,10 @@ function HomeHero() {
               href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
               className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group hidden md:flex"
             >
-              Fala com a gente agora
+              <span className="underline-slide group-hover:text-purple transition-colors duration-300">Fala com a gente agora</span>
               <span className="w-10 h-10 border-2 border-white rounded-full flex
-              items-center justify-center transition-colors group-hover:bg-lemon group-hover:text-purple group-hover:border-lemon">
-                <IcArrow size={16} />
+              items-center justify-center transition-colors group-hover:bg-purple group-hover:border-purple">
+                <IcArrow size={16} className="group-hover:text-lemon transition-colors duration-300" />
               </span>
             </a>
 
@@ -102,10 +102,10 @@ function HomeHero() {
               href="#homeServices"
               className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
             >
-              Saiba mais
+              <span className="underline-slide group-hover:text-purple transition-colors duration-300">Saiba mais</span>
               <span className="w-10 h-10 border-2 border-white rounded-full flex items-center 
-              justify-center transition-colors group-hover:bg-lemon group-hover:text-purple group-hover:border-lemon">
-                <IcArrowDown size={16} />
+              justify-center transition-colors group-hover:bg-purple group-hover:border-purple">
+                <IcArrowDown size={16} className="group-hover:text-lemon transition-colors duration-300" />
               </span>
             </a>
           </div>

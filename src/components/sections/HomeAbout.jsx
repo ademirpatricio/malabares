@@ -1,11 +1,17 @@
 import Container from "../layout/Container";
-import Button from "../ui/Button";
+import IcArrow from "../ui/IcArrow";
 
 import homeAboutImage from "../../assets/images/home-about-image.jpg";
 
+const pillars = [
+  "Você fala\ncom quem faz.",
+  "Você entende\no que está sendo feito.",
+  "E sabe por que\nestá sendo feito.",
+];
+
 function HomeAbout() {
   return (
-    <section id="homeAbout" className="w-full pt-15 pb-20 md:pb-30 md-pt-6 bg-purple-dark">
+    <section id="homeAbout" className="w-full pt-15 pb-20 md:pb-30 md:pt-6 bg-purple-dark">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 lg:gap-20 items-center">
 
@@ -21,12 +27,8 @@ function HomeAbout() {
           {/* CONTEÚDO */}
           <div data-aos="fade" className="max-w-[620px]">
 
-            {/* EYEBROW — ponto-rótulo */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              className="flex items-center gap-2 mb-6"
-            >
+            {/* EYEBROW */}
+            <div data-aos="fade-up" data-aos-delay="100" className="flex items-center gap-2 mb-6">
               <span className="font-sora font-semibold text-sm tracking-[0.2em] uppercase text-lilac">
                 #feito com a <strong>malabares</strong>
               </span>
@@ -35,38 +37,52 @@ function HomeAbout() {
             {/* TÍTULO */}
             <h2
               data-aos="fade-up"
-              data-aos-delay="250"
-              className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white mb-8"
+              data-aos-delay="200"
+              className="font-sora font-bold text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white mb-8"
             >
-              Marketing Digital não precisa ser complicado
+              Estratégia não precisa ser complicada.{" "}
+              <span className="text-pink">Precisa fazer sentido.</span>
             </h2>
 
-            {/* TEXTO */}
+            {/* PARÁGRAFOS */}
+            <p
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="leading-relaxed text-lilac-light mb-5"
+            >
+              A <strong className="text-pink">Malabares</strong> nasceu para 
+              tornar o marketing mais próximo, mais claro e mais estratégico. 
+              Aqui, você conversa diretamente com quem pensa, cria e acompanha 
+              o seu projeto de verdade.
+            </p>
+
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="text-[1.1rem] leading-relaxed text-lilac-light mb-6"
+              className="leading-relaxed text-lilac-light mb-10"
             >
-              Somos a <strong className="text-pink">Malabares</strong>, uma agência que acredita que marketing digital não precisa ser complicado. Aqui, você fala direto com quem faz e entende cada passo do processo.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-delay="550"
-              className="text-[1.1rem] leading-relaxed text-lilac-light mb-10"
-            >
-              <strong>Nosso objetivo é claro:</strong> fazer sua marca crescer com ideias simples, criativas e focadas em resultados.
+              Da primeira ideia ao resultado, a gente está junto no caminho 
+              com transparência, criatividade e foco no que realmente importa: 
+              o crescimento da sua marca.
             </p>
 
             {/* BOTÃO */}
-            <div data-aos="fade-up" data-aos-delay="700">
-              <Button
-                target="_blank"
-                link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
-              >
-                Quer mais detalhes? Bora conversar ⤏
-              </Button>
-            </div>
+            <a
+              data-aos="fade-up"
+              data-aos-delay="600"
+              href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 text-white hover:text-lemon font-sora 
+              font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
+            >
+              <span className="underline-slide">Bora conversar com a gente</span>
+              <span className="w-10 h-10 border-2 border-white rounded-full 
+              flex items-center justify-center transition-colors group-hover:bg-lemon 
+              group-hover:text-purple group-hover:border-lemon">
+                <IcArrow size={16} />
+              </span>
+            </a>
 
           </div>
         </div>

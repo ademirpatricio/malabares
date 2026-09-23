@@ -21,6 +21,7 @@ function Home() {
       <InfiniteBanner />
       <HomeServices />
       <HomeAbout />
+      <InfiniteBanner />
       <HomeBenefits />
       <HomeClients />
       <Logos />
