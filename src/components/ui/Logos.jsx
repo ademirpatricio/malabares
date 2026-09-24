@@ -16,11 +16,12 @@ function Logos() {
   ];
 
   return (
-    <section id="logos-clients" className="w-full pb-24 bg-violet-light">
+    <section id="logos-clients" className="w-full py-24 bg-purple-dark">
       <Container>
 
         {/* GRID LOGOS */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-10 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 
+        gap-y-10 gap-x-8 items-center justify-items-center">
           {logos.map((logo, index) => (
             <div
               key={index}
@@ -31,7 +32,8 @@ function Logos() {
               <img
                 src={logo}
                 alt={`Logo do cliente ${index + 1}`}
-                className="w-32 md:w-44 opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300"
+                className="w-32 md:w-44 opacity-30 hover:opacity-100 
+                hover:scale-102 transition-all duration-300"
               />
             </div>
           ))}

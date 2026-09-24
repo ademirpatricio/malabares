@@ -71,12 +71,12 @@ function HomeBenefits() {
                       A gente pode construir muito mais juntos.
                     </p>
 
-                    <div className="flex items-center gap-3 w-fit">
-                      <span className="font-sora font-semibold text-xs tracking-[0.2em] uppercase text-purple underline-slide">
+                    <div className="flex items-center gap-4 w-fit">
+                      <span className="font-sora font-semibold text-sm tracking-[0.2em] uppercase text-purple underline-slide group-hover:text-purple-dark transition-colors duration-300">
                         Bora conversar
                       </span>
-                      <span className="w-8 h-8 border-2 border-purple rounded-full flex items-center justify-center transition-colors group-hover:bg-purple group-hover:text-lemon shrink-0 text-purple">
-                        <IcArrow size={13} />
+                      <span className="w-10 h-10 border-2 border-purple rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-purple group-hover:border-purple shrink-0 text-purple">
+                        <IcArrow size={16} className="group-hover:text-lemon transition-colors duration-300" />
                       </span>
                     </div>
                   </a>

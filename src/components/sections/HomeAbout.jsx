@@ -2,6 +2,7 @@ import Container from "../layout/Container";
 import IcArrow from "../ui/IcArrow";
 
 import homeAboutImage from "../../assets/images/home-about-image.jpg";
+import heroAssetLight from "../../assets/images/hero-asset-light.svg";
 
 const pillars = [
   "Você fala\ncom quem faz.",
@@ -21,6 +22,14 @@ function HomeAbout() {
               src={homeAboutImage}
               alt="Thayná e Ademir sorrindo"
               className="w-full rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
+            {/* SVG rotativo sobreposto */}
+            <img
+              src={heroAssetLight}
+              alt=""
+              className="absolute pointer-events-none animate-spin-slow
+              -bottom-10 -right-10 w-[160px] h-[160px] z-10
+              md:w-[200px] md:h-[200px]"
             />
           </div>
 

@@ -29,7 +29,7 @@ function HomeServices() {
               font-sora font-bold
               leading-tight text-white"
             >
-              Sua marca não precisa <span className="text-pink"> fazer tudo sozinha.</span>
+              Sua marca não precisa <span className="text-pink"> fazer de tudo sozinha.</span>
             </h2>
 
             <p
@@ -38,8 +38,9 @@ function HomeServices() {
               className="leading-relaxed text-lilac-light"
             >
               Da estratégia à execução, juntamos criatividade,
-              comunicação e tecnologia para construir uma presença digital
-              que tenha a ver com o seu negócio e com quem você quer alcançar.
+              comunicação e tecnologia. Tudo isso para construir
+              uma presença digital que tenha a ver com o
+              seu negócio e com quem você quer alcançar.
             </p>
 
 

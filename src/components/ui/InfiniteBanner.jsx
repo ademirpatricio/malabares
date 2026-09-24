@@ -5,9 +5,9 @@ const variants = {
     dot: "text-purple-dark",
   },
   pink: {
-    bg: "bg-violet-light",
+    bg: "bg-violet",
     text: "text-purple",
-    dot: "text-violet",
+    dot: "text-purple-dark",
   },
 };
 
@@ -36,13 +36,14 @@ function InfiniteBanner({ variant = "lemon", items: itemsProp }) {
   const activeItems = itemsProp ?? items;
 
   return (
-    <section className={`w-full overflow-hidden ${bg} py-8`}>
+    <section className={`w-full overflow-hidden ${bg} py-6`}>
       <div className="flex whitespace-nowrap animate-marquee">
 
         {[...activeItems, ...activeItems].map((item, index) => (
           <div
             key={index}
-            className={`flex items-center ${text} text-2xl lg:text-4xl font-black tracking-wide mr-10`}
+            className={`flex items-center ${text} text-xl lg:text-2xl font-black 
+            tracking-wide mr-10`}
           >
             <span>{item}</span>
             <span className={`${dot} ml-10`}>✦</span>

@@ -12,7 +12,7 @@ import Whatsapp from "../ui/Whatsapp.jsx";
 
 function Footer() {
   return (
-    <footer className="w-full py-8 bg-purple">
+    <footer className="w-full py-8 bg-purple-dark">
       <Container>
         <div className="flex flex-wrap gap-6 items-center justify-between">
 
@@ -20,17 +20,17 @@ function Footer() {
           <img src={logo} alt="Malabares MKT e TEC" className="w-[160px] h-auto brightness-0 invert" />
 
           {/* CRÉDITOS */}
-          <span className="font-sora text-sm text-lilac-light font-light">
+          <span className="font-sora text-sm text-lilac-light/50 font-light tracking-widest">
             ©2026 <strong className="text-lilac">Malabares MKT</strong> · Feito com muito 💕 em Recife - PE
           </span>
 
           {/* REDES SOCIAIS */}
           <div className="flex items-center gap-3">
             <SocialLink white icon={icInstagram} title="Instagram" link="https://www.instagram.com/malabaresmkt" />
+            <SocialLink white icon={icBehance} title="Behance" link="https://www.behance.net/malabaresmkt" />
             <SocialLink white icon={icLinkedin} title="LinkedIn" link="https://www.linkedin.com/company/malabaresmkt/" />
             <SocialLink white icon={icTiktok} title="TikTok" link="https://www.tiktok.com/@malabares.mkt" />
-            <SocialLink white icon={icBehance} title="Behance" link="https://www.behance.net/malabaresmkt" />
-          </div>
+          </div> 
 
         </div>
       </Container>

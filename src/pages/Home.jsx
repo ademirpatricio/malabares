@@ -5,13 +5,9 @@ import HomeServices from "../components/sections/HomeServices";
 import HomeAbout from "../components/sections/HomeAbout";
 import InfiniteBanner from "../components/ui/InfiniteBanner";
 import HomeBenefits from "../components/sections/HomeBenefits";
-import HomeClients from "../components/sections/HomeClients";
 import Logos from "../components/ui/Logos";
-import HomeTestimonials from "../components/sections/HomeTestimonials";
-import WeddingCta from "../components/ui/WeddingCta";
 import Cta from "../components/layout/Cta";
 import Footer from "../components/layout/Footer";
-import LogoBanner from "../components/ui/LogoBanner";
 
 const items = [
   "Desenvolvimento de Sites",
@@ -41,10 +37,7 @@ function Home() {
       <HomeServices />
       <HomeAbout />
       <HomeBenefits />
-      <LogoBanner />
-     
-      <HomeTestimonials />
-      
+      <InfiniteBanner variant="pink" items={itemsMarketing}/>
       <Cta/>
       <Footer/>
     </>

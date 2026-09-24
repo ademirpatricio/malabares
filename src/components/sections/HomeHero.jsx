@@ -53,9 +53,9 @@ function HomeHero() {
               className="font-sora font-bold text-white uppercase
               leading-[1.3] text-[38px] md:text-[55px] mb-6"
             >
-              Equilibrar
+              Pode deixar o
               <br />
-              é{" "}
+              {" "}
               <span
                 style={{
                   textDecoration: "underline",
@@ -63,10 +63,10 @@ function HomeHero() {
                   textDecorationThickness: "4px",
                 }}
               >
-                Método,
+                Malabarismo,
               </span>
               <br />
-              Não Sorte.
+              com a gente.
             </h1>
 
             {/* CTA */}
@@ -75,12 +75,17 @@ function HomeHero() {
               data-aos-delay="350"
               rel="noopener noreferrer"
               href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
-              className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group hidden md:flex"
+              className="flex items-center gap-4 text-white
+               ont-sora font-semibold tracking-[0.2em] uppercase text-sm 
+               w-fit group hidden md:flex"
             >
-              <span className="underline-slide group-hover:text-purple transition-colors duration-300">Fala com a gente agora</span>
+              <span className="underline-slide group-hover:text-purple transition-colors duration-300">
+               Vamos conversar</span>
               <span className="w-10 h-10 border-2 border-white rounded-full flex
-              items-center justify-center transition-colors group-hover:bg-purple group-hover:border-purple">
-                <IcArrow size={16} className="group-hover:text-lemon transition-colors duration-300" />
+              items-center justify-center transition-colors 
+              group-hover:bg-purple group-hover:border-purple">
+                <IcArrow size={16} className="group-hover:text-lemon 
+                transition-colors duration-300" />
               </span>
             </a>
 
@@ -92,18 +97,21 @@ function HomeHero() {
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="text-white font-sora font-light text-center md:text-right leading-relaxed max-w-[280px] text-base md:text-[20px]"
+              className="text-white font-sora font-light 
+              text-center md:text-right leading-relaxed max-w-[280px] "
             >
-              Estratégias digitais, páginas de alta conversão e conteúdo
-              pensado para transformar presença online em resultado.
+              Mais do que criar páginas ou gerir redes sociais, caminhamos ao seu lado. Seja para
+              dar os primeiros passos ou para profissionalizar a reputação que você já tem.
             </p>
             <a
               data-aos="fade-up"
               data-aos-delay="400"
               href="#homeServices"
-              className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
+              className="flex items-center gap-4 text-white font-sora 
+              font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
             >
-              <span className="underline-slide group-hover:text-purple transition-colors duration-300">Saiba mais</span>
+              <span className="underline-slide group-hover:text-purple 
+              transition-colors duration-300">Saiba mais</span>
               <span className="w-10 h-10 border-2 border-white rounded-full flex items-center 
               justify-center transition-colors group-hover:bg-purple group-hover:border-purple">
                 <IcArrowDown size={16} className="group-hover:text-lemon transition-colors duration-300" />
