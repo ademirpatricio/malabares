@@ -26,18 +26,18 @@ function HomeHero() {
       id="HomeHero"
       className="relative w-full overflow-hidden"
       style={{
-        minHeight: "90vh",
+        minHeight: "93vh",
         backgroundSize: "cover",
         backgroundPosition: "top center",
         backgroundAttachment: "fixed",
       }}
     >
       <Container className="h-full">
-        <div className="flex flex-col pt-10 md:pt-0 min-h-[90vh] 
-        md:grid md:grid-cols-2 md:min-h-[90vh]">
+        <div className="flex flex-col pt-10 md:pt-0 min-h-[93vh] 
+        md:grid md:grid-cols-2 md:min-h-[93vh]">
 
           {/* COLUNA ESQUERDA — eyebrow + h1 */}
-          <div className="flex flex-col justify-center pt-24 md:pt-0 pb-4 md:pb-16 
+          <div className="flex flex-col justify-center pt-28 md:pt-12 pb-4 md:pb-16 
           text-center md:text-left">
             <span
               data-aos="fade-up"
@@ -93,7 +93,7 @@ function HomeHero() {
 
           {/* COLUNA DIREITA — texto de apoio + CTA */}
           <div className="flex flex-col justify-start md:justify-center 
-          items-center md:items-end pb-6 md:pb-16 gap-4 md:gap-8">
+          items-center md:items-end pb-6 md:pb-16 gap-4 md:gap-8 md:pt-10">
             <p
               data-aos="fade-up"
               data-aos-delay="300"
@@ -151,7 +151,7 @@ function HomeHero() {
         alt="Thayná Aguiar sorrindo"
         className="hidden md:block absolute bottom-0 
         left-1/2 -translate-x-1/2 object-contain object-bottom 
-        pointer-events-none h-[90%] z-10"
+        pointer-events-none h-[85%] z-10"
       />
 
       {/* RODAPÉ DO HERO — prova social + redes sociais */}

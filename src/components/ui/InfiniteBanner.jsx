@@ -5,9 +5,9 @@ const variants = {
     dot: "text-purple-dark",
   },
   pink: {
-    bg: "bg-violet",
-    text: "text-purple",
-    dot: "text-purple-dark",
+    bg: "bg-pink",
+    text: "text-white",
+    dot: "text-pink-dark",
   },
 };
 
