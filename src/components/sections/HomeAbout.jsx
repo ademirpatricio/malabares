@@ -28,7 +28,7 @@ function HomeAbout() {
               src={heroAssetLight}
               alt=""
               className="absolute pointer-events-none animate-spin-slow
-              -bottom-10 -right-10 w-[160px] h-[160px] z-10
+              -bottom-20 -right-20 w-[160px] h-[160px] z-10
               md:w-[200px] md:h-[200px]"
             />
           </div>
