@@ -68,7 +68,7 @@ function HomeBenefits() {
                     transition-opacity hover:opacity-90"
                   >
                     <p className="font-sora font-bold text-lg leading-snug text-purple">
-                      A gente pode construir isso junto.
+                      A gente pode construir muito mais juntos.
                     </p>
 
                     <div className="flex items-center gap-3 w-fit">

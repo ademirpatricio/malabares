@@ -1,117 +1,128 @@
+import { useState } from "react";
 import Container from "../layout/Container";
-import NavLink from "../ui/NavLink";
 
 import testimonial1 from "../../assets/images/testimonials-image-1.png";
 import testimonial2 from "../../assets/images/testimonials-image-2.png";
 
+import photo1 from "../../assets/images/home-clients-image-1.jpg";
+import photo2 from "../../assets/images/home-clients-image-2.jpg";
+import photo3 from "../../assets/images/home-clients-image-3.jpg";
+import photo4 from "../../assets/images/home-clients-image-4.jpg";
+
+const testimonials = [
+  {
+    name: "Paula Ferreira",
+    role: "Diretora da Merreira Consultoria",
+    text: "Quero agradecer à equipe de profissionais da Malabares pela atenção que eles estão tendo em cada apresentação dos conteúdos. Estou muito confiante do que vi até agora. Gratidão a todos vocês!",
+  },
+  {
+    name: "Daniel Taddone",
+    role: "CEO da Rumo Nordeste",
+    text: "Há duas características da equipe da Malabares que mais admiro. A primeira é seu senso estético apurado e elegante. Suas criações têm personalidade e arrojo. A segunda é sua simpatia. É uma equipe profissional gente fina a toda prova!",
+  },
+];
+
+const photos = [photo1, photo2, photo3, photo4];
+
 function HomeTestimonials() {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((c) => (c === 0 ? photos.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === photos.length - 1 ? 0 : c + 1));
+
   return (
-    <section id="homeTestimonials" className="w-full py-20 bg-white">
+    <section id="homeTestimonials" className="w-full py-24 bg-purple overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* TEXTO */}
-          <div data-aos="fade-right" className="max-w-[620px]">
-
-            {/* STARS */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              className="flex items-center gap-4 mb-10"
-            >
-              <div className="flex items-center gap-2 text-xl text-pink">
-                ★ ★ ★ ★ ☆
-              </div>
-              <span className="text-xl font-semibold text-purple">4.8</span>
-            </div>
-
-            {/* TÍTULO */}
-            <h2
-              data-aos="fade-up"
-              data-aos-delay="250"
-              className="text-purple text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight mb-10"
-            >
-              Alto grau de{" "}
-              <span className="text-pink">satisfação</span>
-              <br />
-              entre nossos clientes.
-            </h2>
-
-            {/* TEXTO */}
-            <p
-              data-aos="fade-up"
-              data-aos-delay="400"
-              className="text-[1.1rem] leading-relaxed text-neutral-light mb-6"
-            >
-              Ao escolher trabalhar conosco, você está optando por <strong>parceria, excelência</strong> e <strong>resultados tangíveis.</strong>
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-delay="550"
-              className="text-[1.1rem] leading-relaxed text-neutral-light mb-10"
-            >
-              Na Malabares, nosso sucesso é medido pelos resultados e pela satisfação dos nossos clientes. Veja o que alguns deles têm a dizer sobre nós:
-            </p>
-
-            {/* BOTÃO */}
-            <div data-aos="fade-up" data-aos-delay="700">
-              <NavLink href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares" 
-              target="_blank">Fala com a gente ⤏</NavLink>
-            </div>
-
-          </div>
-
-          {/* CARDS */}
+          {/* Coluna esquerda: título + depoimentos */}
           <div className="flex flex-col gap-8">
-
-            {/* CARD 1 */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              className="bg-white rounded-xl p-8 md:p-10 border-2 border-muted hover:bg-muted transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <img
-                  src={testimonial1}
-                  alt="Paula Ferreira"
-                  className="w-16 h-16 rounded-full object-cover shrink-0 border-2 border-beige shadow-md"
-                />
-                <div>
-                  <h4 className="text-base font-semibold text-purple">Paula Ferreira</h4>
-                  <span className="text-sm text-neutral-light">Diretora da Merreira Consultoria</span>
-                </div>
-              </div>
-              <p className="text-sm leading-relaxed text-neutral-light">
-                Quero agradecer à equipe de profissionais da <strong>Malabares</strong> pela atenção que eles estão tendo em cada apresentação dos conteúdos. Estou muito confiante do que vi até agora. Gratidão a todos vocês!
-              </p>
+            <div data-aos="fade-up" className="flex flex-col gap-2">
+              <h2 className="font-sora font-bold text-3xl lg:text-4xl text-white leading-tight">
+                Parcerias que fizeram <br/><span className="text-pink">parte da nossa história.</span>
+              </h2>
             </div>
 
-            {/* CARD 2 */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="bg-white rounded-xl p-8 md:p-10 border-2 border-muted hover:bg-muted transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <img
-                  src={testimonial2}
-                  alt="Daniel Taddone"
-                  className="w-16 h-16 rounded-full object-cover shrink-0 border-2 border-beige shadow-md"
-                />
-                <div>
-                  <h4 className="text-base font-semibold text-purple">Daniel Taddone</h4>
-                  <span className="text-sm text-neutral-light">CEO da Rumo Nordeste</span>
-                </div>
-              </div>
-              <p className="text-sm leading-relaxed text-neutral-light">
-                Há duas características da equipe da Malabares que mais admiro. A primeira é seu senso estético apurado e elegante, algo essencial no design. Suas criações têm personalidade e arrojo.
-                <br /><br />
-                A segunda é sua simpatia. É uma equipe profissional "gente fina" a toda prova! Calmos, simpáticos e amigos. Sou seu cliente há alguns anos e sempre que penso na criação de uma marca, sei que posso contar com eles para transformarem uma ideia numa bela imagem.
-              </p>
-            </div>
+            <div className="flex flex-col gap-4">
+              {testimonials.map((t, i) => (
+                <div
+                  key={i}
+                  data-aos="fade-up"
+                  data-aos-delay={i * 150}
+                  className="flex flex-col gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors duration-300"
+                >
+                  {/* Nome e cargo no topo */}
+                  <div>
+                    <p className="font-sora font-semibold text-sm text-white">{t.name}</p>
+                    <p className="font-sora text-xs text-white/40">{t.role}</p>
+                  </div>
 
+                  {/* Texto */}
+                  <p className="text-lilac-light leading-relaxed text-sm">
+                    {t.text}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Coluna direita: carrossel */}
+          <div data-aos="fade-left" className="relative w-full">
+            <div className="relative w-full aspect-[8/7] rounded-2xl overflow-hidden">
+              {photos.map((photo, i) => (
+                <img
+                  key={i}
+                  src={photo}
+                  alt=""
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                    i === current ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 via-transparent to-transparent" />
+
+              <div className="absolute bottom-4 left-0 right-0 flex items-center justify-between px-5">
+                <div className="flex gap-1.5">
+                  {photos.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrent(i)}
+                      className={`h-1.5 rounded-full transition-all duration-300 ${
+                        i === current ? "w-6 bg-lemon" : "w-1.5 bg-white/40"
+                      }`}
+                    />
+                  ))}
+                </div>
+
+                <div className="flex gap-2">
+                  <button
+                    onClick={prev}
+                    className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M9 2L4 7L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                  <button
+                    onClick={next}
+                    className="w-9 h-9 rounded-full bg-lemon flex items-center justify-center text-purple hover:opacity-90 transition-opacity"
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M5 2L10 7L5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute top-4 right-4 bg-black/40 backdrop-blur-sm rounded-full px-3 py-1">
+              <span className="font-sora text-xs text-white/70">
+                {String(current + 1).padStart(2, "0")} / {String(photos.length).padStart(2, "0")}
+              </span>
+            </div>
+          </div>
+
         </div>
       </Container>
     </section>

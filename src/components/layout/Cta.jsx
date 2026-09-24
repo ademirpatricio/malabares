@@ -3,16 +3,9 @@ import Button from "../ui/Button";
 
 function Cta() {
   return (
-    <section id="cta" className="relative overflow-hidden w-full py-20 lg:py-32 bg-purple text-white">
+    <section id="cta" className="relative 
+    overflow-hidden w-full py-20 lg:py-12 bg-purple text-white">
 
-      {/* HALFTONE — canto inferior esquerdo */}
-      <div
-        className="pointer-events-none absolute left-[-100px] bottom-[-140px] w-[560px] h-[560px] opacity-45"
-        style={{
-          backgroundImage: "radial-gradient(#6A3CFF 2px, transparent 2.2px)",
-          backgroundSize: "14px 14px",
-        }}
-      />
 
       {/* GRAIN — descomentar quando o asset estiver disponível */}
       {/* <div className="pointer-events-none absolute inset-0 opacity-35"
@@ -22,7 +15,8 @@ function Cta() {
       <Container>
         <div
           data-aos="fade-up"
-          className="relative z-10 flex flex-col items-center text-center gap-8 max-w-[760px] mx-auto"
+          className="relative z-10 flex flex-col items-center text-center gap-8 
+          max-w-[760px] mx-auto"
         >
           <h2 className="text-4xl md:text-6xl lg:text-7xl leading-[0.92] tracking-[-0.03em]">
             Seu projeto não precisa{" "}

@@ -20,7 +20,7 @@ function HomeAbout() {
             <img
               src={homeAboutImage}
               alt="Thayná e Ademir sorrindo"
-              className="w-full rounded shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+              className="w-full rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
             />
           </div>
 

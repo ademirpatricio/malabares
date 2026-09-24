@@ -16,24 +16,8 @@ function Logos() {
   ];
 
   return (
-    <section id="logos-clients" className="w-full py-24 bg-purple">
+    <section id="logos-clients" className="w-full pb-24 bg-violet-light">
       <Container>
-
-        {/* HEADER */}
-        <div data-aos="fade-up" className="text-center mb-16">
-
-          {/* EYEBROW — ponto-rótulo */}
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="font-sora font-light text-sm tracking-[0.2em] uppercase text-lilac">
-              marcas que <span className="font-bold">confiaram</span> na malabares
-            </span>
-          </div>
-
-          <h2 className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white">
-            <span className="text-pink">Parcerias</span> que fazem parte da nossa trajetória
-          </h2>
-
-        </div>
 
         {/* GRID LOGOS */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-10 items-center justify-items-center">

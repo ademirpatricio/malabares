@@ -11,6 +11,25 @@ import HomeTestimonials from "../components/sections/HomeTestimonials";
 import WeddingCta from "../components/ui/WeddingCta";
 import Cta from "../components/layout/Cta";
 import Footer from "../components/layout/Footer";
+import LogoBanner from "../components/ui/LogoBanner";
+
+const items = [
+  "Desenvolvimento de Sites",
+  "Marketing Digital",
+  "Estratégia de Conteúdo",
+  "SEO e Patrocinados",
+  "Branding",
+  "Criação de Infoprodutos",
+  "Identidade Visual",
+];
+
+const itemsMarketing = [
+  "Estratégia",
+  "Criatividade",
+  "Tecnologia",
+  "Proximidade",
+  "Resultado",
+];
 
 function Home() {
   return (
@@ -18,18 +37,14 @@ function Home() {
       {/* <WeddingBar />*/}
       <Navbar />
       <HomeHero />
-      <InfiniteBanner variant="lemon" />
+      <InfiniteBanner variant="lemon" items={items}/>
       <HomeServices />
       <HomeAbout />
       <HomeBenefits />
-      <InfiniteBanner variant="pink" />
-
-      <Logos />
-      
-      
-      <HomeClients />
-      
+      <LogoBanner />
+     
       <HomeTestimonials />
+      
       <Cta/>
       <Footer/>
     </>
