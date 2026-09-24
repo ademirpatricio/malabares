@@ -5,7 +5,6 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 @theme {
   
   --font-sora: "Sora", sans-serif;
-  --font-archivo: "Archivo Black", sans-serif;
 
   --color-pink: #FA1256;
   --color-pink-dark: #A1002F;
@@ -47,7 +46,7 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
     color: var(--color-roxo);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-archivo);
+    font-family: var(--font-sora);
   }
   p {
     font-family: var(--font-sora);

@@ -59,7 +59,7 @@ function Navbar() {
               <button
                 onClick={() => setIsOpen(true)}
                 aria-label="Abrir menu"
-                className={`w-14 h-14 rounded
+                className={`w-14 h-14 rounded-xl
                 flex items-center justify-center cursor-pointer 
                 transition-colors duration-300 
                 ${scrolled ? "bg-white text-purple hover:bg-transparent hover:text-white shadow-md" : "text-white hover:bg-white hover:text-purple"}`}
@@ -100,19 +100,19 @@ function Navbar() {
         {/* LINKS — alinhados à direita */}
         <nav className="flex flex-col items-end flex-1 justify-center gap-5 md:gap-6 px-12">
           <a onClick={() => setIsOpen(false)} href="/sobre"
-            className="font-archivo text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
+            className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Sobre nós
           </a>
           <a onClick={() => setIsOpen(false)} href="https://www.behance.net/malabaresmkt" target="_blank" rel="noopener noreferrer"
-            className="font-archivo text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
+            className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Trabalhos
           </a>
           <a onClick={() => setIsOpen(false)} href="/contato"
-            className="font-archivo text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
+            className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Contato
           </a>
           <a onClick={() => setIsOpen(false)} href="https://wedding.malabares.com.br" target="_blank" rel="noopener noreferrer"
-            className="font-archivo text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
+            className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Wedding
           </a>
         </nav>

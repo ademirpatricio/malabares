@@ -1,31 +1,26 @@
-function BenefitsCard({ title, description, icon }) {
+function BenefitsCard({ number, question, answer }) {
   return (
     <div className="
-      h-full
-      bg-lilac/10
-      border border-white/10
-      px-10 pt-15 pb-12
-      rounded-lg
-      flex flex-col
-      text-center
+      flex items-start gap-6
+      bg-white/5 border border-white/10
+      rounded-xl px-8 py-7
       transition-all duration-300
-      hover:shadow-[0_8px_32px_rgba(0,0,0,0.35)]
+      hover:bg-white/10 group
     ">
-      <img
-        src={icon}
-        alt="Ícone de serviço"
-        className="w-35 h-auto mb-8 mx-auto"
-      />
+      {/* NÚMERO */}
+      <span className="font-sora font-black text-6xl leading-none text-white/15 group-hover:text-lemon transition-colors duration-300 select-none shrink-0 mt-1">
+        {number}
+      </span>
 
-      {title && (
-        <h4 className="text-2xl leading-tight mb-4 text-white">
-          {title}
-        </h4>
-      )}
-
-      <p className="text-[1.1rem] leading-relaxed text-lilac-light">
-        {description}
-      </p>
+      {/* CONTEÚDO */}
+      <div className="flex flex-col gap-2">
+        <h3 className="font-sora font-bold text-base leading-snug text-pink">
+          {question}
+        </h3>
+        <p className="font-sora text-lilac-light leading-relaxed text-sm">
+          {answer}
+        </p>
+      </div>
     </div>
   );
 }

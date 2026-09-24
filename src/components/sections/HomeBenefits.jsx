@@ -1,61 +1,109 @@
 import Container from "../layout/Container";
-import BenefitsCard from "../ui/BenefitsCard";
+import benefitsBg from "../../assets/images/home-benefitis-bg.jpg";
+import IcArrow from "../ui/IcArrow";
+import clientImg1 from "../../assets/images/benefits-card-1.jpg";
+import clientImg2 from "../../assets/images/benefits-card-2.jpg";
+import clientImg4 from "../../assets/images/benefits-card-3.jpg";
 
-import homeBenefitsIcon1 from "../../assets/images/icons/home-benefits-icon-1.svg";
-import homeBenefitsIcon2 from "../../assets/images/icons/home-benefits-icon-2.svg";
-import homeBenefitsIcon3 from "../../assets/images/icons/home-benefits-icon-3.svg";
+const cards = [
+  {
+    type: "image",
+    img: clientImg1,
+    text: "Você tem uma ideia, mas não sabe por onde começar."
+  },
+  {
+    type: "image",
+    img: clientImg2,
+    text: "Sua marca cresceu, mas a comunicação ficou para trás."
+  },
+  {
+    type: "image",
+    img: clientImg4,
+    text: "Quer fazer marketing digital sem fazer tudo sozinho."
+  },
+  {
+    type: "cta"
+  },
+];
 
 function HomeBenefits() {
   return (
-    <section id="homeBenefits" className="w-full pt-20 pb-10 bg-purple">
+    <section id="homeBenefits" className="w-full bg-purple-dark pt-4 pb-36"
+    style={{ backgroundImage: `url(${benefitsBg})`, backgroundSize: "cover", backgroundPosition: "bottom" }}>
       <Container>
+        <div className="flex flex-col gap-10">
 
-        {/* HEADER */}
-        <div data-aos="fade-up" className="w-full text-center max-w-[850px] mx-auto">
+          {/* Eyebrow + Título */}
+          <div className="flex flex-col gap-4">
+            <div data-aos="fade-up" className="flex flex-col gap-2">
+              <span className="font-sora text-xs font-semibold md:tracking-[0.25em] uppercase text-violet">
+                Talvez a gente <strong>combine...</strong>
+              </span>
+            </div>
 
-          {/* EYEBROW — ponto-rótulo */}
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="flex items-center justify-center gap-2 mb-6"
-          >
-            <span className="font-sora font-semibold text-sm tracking-[0.2em] uppercase text-lilac">
-              motivos para nos escolher
-            </span>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <h2 className="font-sora font-bold text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white">
+                Se você se reconhece
+              </h2>
+              <h2 className="font-sora font-bold text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-pink">
+                em alguma dessas situações:
+              </h2>
+            </div>
           </div>
 
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="250"
-            className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white mb-8"
-          >
-            Escolher o nosso time é para quem...
-          </h2>
+          {/* Grid de 4 cards */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {cards.map((card, i) => {
+              if (card.type === "cta") {
+                return (
+                  <a
+                    key={i}
+                    href="https://wa.me/5581997278234"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay={(i + 1) * 100}
+                    className="relative rounded-xl overflow-hidden aspect-[3/4] 
+                    bg-lemon hover:bg-lemon-light flex flex-col justify-between p-6 group 
+                    transition-opacity hover:opacity-90"
+                  >
+                    <p className="font-sora font-bold text-lg leading-snug text-purple">
+                      A gente pode construir isso junto.
+                    </p>
 
-        </div>
+                    <div className="flex items-center gap-3 w-fit">
+                      <span className="font-sora font-semibold text-xs tracking-[0.2em] uppercase text-purple underline-slide">
+                        Bora conversar
+                      </span>
+                      <span className="w-8 h-8 border-2 border-purple rounded-full flex items-center justify-center transition-colors group-hover:bg-purple group-hover:text-lemon shrink-0 text-purple">
+                        <IcArrow size={13} />
+                      </span>
+                    </div>
+                  </a>
+                );
+              }
 
-        {/* CARDS */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mt-16">
-
-          <div data-aos="fade-up" data-aos-delay="100">
-            <BenefitsCard
-              icon={homeBenefitsIcon1}
-              description="Precisa criar seu produto digital e deseja ser dono do seu próprio negócio"
-            />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="250">
-            <BenefitsCard
-              icon={homeBenefitsIcon2}
-              description="Tem algo relevante para compartilhar com o mundo"
-            />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="400">
-            <BenefitsCard
-              icon={homeBenefitsIcon3}
-              description="Precisa desenvolver o marketing digital de sua empresa ou projeto"
-            />
+              return (
+                <div
+                  key={i}
+                  data-aos="fade-up"
+                  data-aos-delay={(i + 1) * 100}
+                  className="relative rounded-xl overflow-hidden aspect-[3/4]"
+                  style={{
+                    backgroundImage: `url(${card.img})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple via-purple/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="font-sora leading-snug text-white">
+                      {card.text}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
         </div>

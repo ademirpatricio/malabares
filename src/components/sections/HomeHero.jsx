@@ -50,7 +50,8 @@ function HomeHero() {
             <h1
               data-aos="fade-up"
               data-aos-delay="150"
-              className="font-archivo text-white uppercase leading-[1.3] text-[38px] md:text-[55px] mb-6"
+              className="font-sora font-bold text-white uppercase
+              leading-[1.3] text-[38px] md:text-[55px] mb-6"
             >
               Equilibrar
               <br />

@@ -18,15 +18,18 @@ function Home() {
       {/* <WeddingBar />*/}
       <Navbar />
       <HomeHero />
-      <InfiniteBanner />
+      <InfiniteBanner variant="lemon" />
       <HomeServices />
       <HomeAbout />
-      <InfiniteBanner />
       <HomeBenefits />
-      <HomeClients />
+      <InfiniteBanner variant="pink" />
+
       <Logos />
+      
+      
+      <HomeClients />
+      
       <HomeTestimonials />
-      <WeddingCta/>
       <Cta/>
       <Footer/>
     </>
