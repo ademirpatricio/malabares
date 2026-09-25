@@ -5,8 +5,12 @@ import IcArrow from "../ui/IcArrow";
 function Cta() {
   return (
     <section id="cta" className="relative 
-    overflow-hidden w-full pt-32 pb-24 bg-lilac-light text-white"
-    style={{ backgroundImage: `url(${ctaBg})`, backgroundSize: "cover", backgroundPosition: "bottom center" }}>
+    overflow-hidden w-full pt-18 pb-12 md:pt-32 md:pb-24 bg-lilac-light text-white"
+    style={{ 
+      backgroundImage: `url(${ctaBg})`, 
+      backgroundSize: "cover", 
+      backgroundPosition: "bottom center" 
+    }}>
 
       <Container>
         <div
@@ -14,9 +18,8 @@ function Cta() {
           className="relative z-10 flex flex-col items-center text-center gap-8 
           mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple">
-            Seu projeto não precisa{" "}
-            <span className="text-white">esperar.</span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-purple">
+            Seu projeto não precisa <span className="text-white"> esperar.</span>
           </h2>
 
           <p className="text-purple">

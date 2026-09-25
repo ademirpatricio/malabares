@@ -24,7 +24,7 @@ function HomeHero() {
   return (
     <section
       id="HomeHero"
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden font-sora"
       style={{
         minHeight: "93vh",
         backgroundSize: "cover",
@@ -37,12 +37,11 @@ function HomeHero() {
         md:grid md:grid-cols-2 md:min-h-[93vh]">
 
           {/* COLUNA ESQUERDA — eyebrow + h1 */}
-          <div className="flex flex-col justify-center pt-28 md:pt-12 pb-4 md:pb-16 
-          text-center md:text-left">
+          <div className="flex flex-col justify-center pt-28 md:pt-12 pb-4 md:pb-16 text-left">
             <span
               data-aos="fade-up"
               data-aos-delay="0"
-              className="font-sora text-xs 
+              className="text-xs 
               font-semibold md:tracking-[0.25em] uppercase text-purple mb-6"
             >
               Somos uma <span className="font-bold underline">Agência</span> de MKT &amp; TEC
@@ -51,7 +50,7 @@ function HomeHero() {
               data-aos="fade-up"
               data-aos-delay="150"
               className="font-sora font-bold text-white uppercase
-              leading-[1.3] text-[38px] md:text-[55px] mb-6"
+              leading-[1.3] text-[38px] md:text-[55px] mb-2 md:mb-6"
             >
               Pode deixar o
               <br />
@@ -76,8 +75,8 @@ function HomeHero() {
               rel="noopener noreferrer"
               href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
               className="flex items-center gap-4 text-white
-               ont-sora font-semibold tracking-[0.2em] uppercase text-sm 
-               w-fit group hidden md:flex"
+              font-semibold tracking-[0.2em] uppercase text-sm 
+              w-fit group hidden md:flex"
             >
               <span className="underline-slide group-hover:text-purple transition-colors duration-300">
                Vamos conversar</span>
@@ -98,7 +97,7 @@ function HomeHero() {
               data-aos="fade-up"
               data-aos-delay="300"
               className="text-white font-sora font-light 
-              text-center md:text-right leading-relaxed max-w-[280px] "
+              text-left md:text-right leading-relaxed md:max-w-[280px]"
             >
               Mais do que criar páginas ou gerir redes sociais, caminhamos ao seu lado. Seja para
               dar os primeiros passos ou para profissionalizar a reputação que você já tem.
@@ -139,7 +138,7 @@ function HomeHero() {
         aria-hidden="true"
         className=" md:block absolute -translate-x-1/2  
         pointer-events-none animate-spin-slow 
-        top-[65%] left-[50%] w-[250px] h-[250px] z-5
+        top-[70%] left-[50%] w-[220px] h-[220px] z-5
         md:top-[22%] md:left-[60%] md:w-[220px] md:h-[220px]"
       />
 

@@ -11,7 +11,8 @@ import homeServicesIcon5 from "../../assets/images/icons/home-services-icon-5.sv
 
 function HomeServices() {
   return (
-    <section id="homeServices" className="w-full pt-24 pb-24" 
+    <section id="homeServices" 
+    className="w-full py-18 md:pt-24 md:pb-24" 
     style={{ backgroundImage: `url(${homeServicesBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -25,7 +26,7 @@ function HomeServices() {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-2xl md:text-3xl lg:text-4xl 
+              className="text-4xl md:text-3xl lg:text-4xl
               font-sora font-bold
               leading-tight text-white"
             >

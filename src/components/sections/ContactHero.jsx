@@ -3,10 +3,12 @@ import Button from "../ui/Button";
 
 function ContactHero() {
   return (
-    <section id="contactHero" className="relative overflow-hidden w-full bg-purple text-white px-0 py-20 lg:py-28">
+    <section id="contactHero" 
+    className="relative overflow-hidden w-full bg-purple text-white px-0 py-20 lg:py-28">
 
       {/* BG GLOW */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-pink/20 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] 
+      h-[500px] bg-pink/20 blur-[120px] rounded-full pointer-events-none" />
 
       <Container>
         <div data-aos="fade-up" className="relative z-10 max-w-[700px]">

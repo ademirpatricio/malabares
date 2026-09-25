@@ -12,7 +12,8 @@ const pillars = [
 
 function HomeAbout() {
   return (
-    <section id="homeAbout" className="w-full pt-15 pb-20 md:pb-30 md:pt-6 bg-purple-dark">
+    <section id="homeAbout" 
+    className="w-full pt-0 pb-20 md:pb-30 md:pt-6 bg-purple-dark">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 lg:gap-20 items-center">
 
@@ -28,8 +29,8 @@ function HomeAbout() {
               src={heroAssetLight}
               alt=""
               className="absolute pointer-events-none animate-spin-slow
-              -bottom-20 -right-20 w-[160px] h-[160px] z-10
-              md:w-[200px] md:h-[200px]"
+              -bottom-10 right-5 w-[120px] h-[120px] z-10
+              md:-bottom-20 md:-right-20 md:w-[200px] md:h-[200px]"
             />
           </div>
 
@@ -48,7 +49,7 @@ function HomeAbout() {
             <h2
               data-aos="fade-up"
               data-aos-delay="200"
-              className="font-sora font-bold text-2xl md:text-3xl lg:text-4xl 
+              className="font-sora font-bold text-4xl md:text-3xl lg:text-4xl 
               leading-tight tracking-tight text-white mb-8"
             >
               Estratégia não precisa ser complicada.{" "}
