@@ -39,7 +39,7 @@ function HomeAbout() {
 
             {/* EYEBROW */}
             <div data-aos="fade-up" data-aos-delay="100" className="flex items-center gap-2 mb-6">
-              <span className="font-sora text-xs 
+              <span className="text-xs 
               font-semibold md:tracking-[0.25em] uppercase text-violet">
                 #feito com a <strong>malabares</strong>
               </span>

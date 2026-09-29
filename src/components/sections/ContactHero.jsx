@@ -1,10 +1,11 @@
 import Container from "../layout/Container";
-import Button from "../ui/Button";
+import IcArrow from "../ui/IcArrow";
 
 function ContactHero() {
   return (
     <section id="contactHero" 
-    className="relative overflow-hidden w-full bg-purple text-white px-0 py-20 lg:py-28">
+    className="relative overflow-hidden w-full bg-purple text-white flex items-center"
+    style={{ minHeight: "90vh" }}>
 
       {/* BG GLOW */}
       <div className="absolute top-0 right-0 w-[500px] 
@@ -26,15 +27,31 @@ function ContactHero() {
             Fale diretamente com a nossa equipe e receba uma análise inicial do seu projeto. Sem enrolação, sem atendimento robotizado e com soluções pensadas para a sua realidade.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-5">
-            <Button variant="accent" link="#contactForm">Solicitar consultoria  ⤏</Button>
-            <Button
-              variant="outline"
-              link="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
-              target="_blank"
+          <div className="flex flex-col sm:flex-row gap-6 items-start">
+            <a
+              href="#contactForm"
+              className="flex items-center gap-4 text-white font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
             >
-              Chamar no WhatsApp ⤏
-            </Button>
+              <span className="underline-slide group-hover:text-lemon transition-colors duration-300">
+                Solicitar consultoria
+              </span>
+              <span className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-lemon group-hover:border-lemon shrink-0">
+                <IcArrow size={16} className="group-hover:text-purple transition-colors duration-300" />
+              </span>
+            </a>
+            <a
+              href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 text-white/60 font-sora font-semibold tracking-[0.2em] uppercase text-sm w-fit group hover:text-white transition-colors duration-300"
+            >
+              <span className="underline-slide">
+                WhatsApp
+              </span>
+              <span className="w-10 h-10 border-2 border-white/30 rounded-full flex items-center justify-center transition-colors duration-300 group-hover:border-white shrink-0">
+                <IcArrow size={16} />
+              </span>
+            </a>
           </div>
 
         </div>

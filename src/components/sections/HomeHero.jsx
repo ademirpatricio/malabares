@@ -37,32 +37,27 @@ function HomeHero() {
         md:grid md:grid-cols-2 md:min-h-[93vh]">
 
           {/* COLUNA ESQUERDA — eyebrow + h1 */}
-          <div className="flex flex-col justify-center pt-28 md:pt-12 pb-4 md:pb-16 text-left">
+          <div className="flex flex-col justify-center pt-28 
+          md:pt-12 pb-4 md:pb-16 text-left">
             <span
               data-aos="fade-up"
               data-aos-delay="0"
               className="text-xs 
-              font-semibold md:tracking-[0.25em] uppercase text-purple mb-6"
+              font-semibold md:tracking-[0.25em] uppercase text-purple mb-12"
             >
-              Somos uma <span className="font-bold underline">Agência</span> de MKT &amp; TEC
+              Somos uma <span className="font-black">Agência</span> de MKT &amp; TEC
             </span>
             <h1
               data-aos="fade-up"
               data-aos-delay="150"
-              className="font-sora font-bold text-white uppercase
-              leading-[1.3] text-[38px] md:text-[55px] mb-2 md:mb-6"
+              className="font-bold text-white
+              leading-[1.0] text-[38px] md:text-[55px] mb-2 md:mb-12"
             >
               Pode deixar o
               <br />
               {" "}
-              <span
-                style={{
-                  textDecoration: "underline",
-                  textUnderlineOffset: "6px",
-                  textDecorationThickness: "4px",
-                }}
-              >
-                Malabarismo,
+              <span className="text-purple">
+                malabarismo,
               </span>
               <br />
               com a gente.

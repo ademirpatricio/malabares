@@ -1,61 +1,72 @@
 import Container from "../layout/Container";
+import IcArrow from "../ui/IcArrow";
 
-import icWhatsapp from "../../assets/images/icons/ic-social-whatsapp.svg";
-import icInstagram from "../../assets/images/icons/ic-social-instagram.svg";
-import icEmail from "../../assets/images/icons/ic-social-email.svg";
-import icLinkedin from "../../assets/images/icons/ic-social-linkedin.svg";
+const channels = [
+  {
+    label: "WhatsApp",
+    description: "Resposta rápida para dúvidas e orçamentos.",
+    action: "Falar no WhatsApp",
+    href: "https://wa.me/5581997030368",
+  },
+  {
+    label: "Instagram",
+    description: "Veja nosso portfólio e acompanhe os bastidores.",
+    action: "Seguir no Instagram",
+    href: "https://instagram.com/malabares.co",
+  },
+  {
+    label: "E-mail",
+    description: "Para propostas e documentações formais.",
+    action: "Enviar um e-mail",
+    href: "mailto:oi@malabares.com.br",
+  },
+];
 
 function ContactChannels() {
-  const channels = [
-    { icon: icWhatsapp, title: "WhatsApp", description: "Fale diretamente com a nossa equipe.", link: "https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares", button: "Abrir WhatsApp" },
-    { icon: icInstagram, title: "Instagram", description: "Acompanhe nossos bastidores e projetos.", link: "https://instagram.com/malabaresmkt", button: "@malabaresmkt" },
-    { icon: icEmail, title: "E-mail", description: "Envie sua ideia ou proposta comercial.", link: "mailto:faleconosco@malabares.com.br", button: "Enviar e-mail" },
-    { icon: icLinkedin, title: "LinkedIn", description: "Conecte-se com a Malabares.", link: "https://linkedin.com/company/malabaresmkt", button: "Ver perfil" },
-  ];
-
   return (
-    <section id="contactChannels" className="w-full pt-15 pb-10 bg-white">
+    <section className="w-full py-24 bg-purple-dark text-white">
       <Container>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          {/* Cabeçalho */}
+          <div data-aos="fade-right">
+            <span className="font-sora text-xs font-semibold tracking-[0.2em] uppercase text-lemon mb-4 inline-block">
+              Outros canais
+            </span>
+            <h2 className="font-sora font-bold text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight">
+              Escolha como prefere falar com a gente.
+            </h2>
+          </div>
 
-        {/* TOPO */}
-        <div data-aos="fade-up" className="text-center max-w-[500px] mx-auto mb-16">
-          <span className="inline-block font-sora font-semibold text-sm tracking-[0.2em] uppercase text-lilac mb-6">
-            contato rápido
-          </span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-purple mb-8">
-            Escolha o melhor canal para falar com a gente
-          </h2>
-          <p className="text-[1.1rem] leading-relaxed text-neutral-light">
-            Estamos disponíveis para tirar dúvidas, analisar seu projeto e entender como podemos ajudar sua marca a crescer.
-          </p>
+          {/* Canais */}
+          <div className="flex flex-col gap-6" data-aos="fade-left">
+            {channels.map((ch, i) => (
+              <a
+                key={i}
+                href={ch.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between py-6 border-b border-white/10 group"
+              >
+                <div>
+                  <p className="font-sora font-semibold text-sm tracking-[0.1em] uppercase text-white/40 mb-1">
+                    {ch.label}
+                  </p>
+                  <p className="font-sora text-base font-medium text-white">
+                    {ch.description}
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 shrink-0 ml-6">
+                  <span className="font-sora text-xs font-semibold tracking-[0.15em] uppercase text-white/60 group-hover:text-white transition-colors duration-300 hidden sm:block">
+                    {ch.action}
+                  </span>
+                  <span className="w-10 h-10 border-2 border-white/20 rounded-full flex items-center justify-center group-hover:bg-lemon group-hover:border-lemon transition-colors duration-300 shrink-0">
+                    <IcArrow size={16} className="text-white group-hover:text-purple transition-colors duration-300" />
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-
-        {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {channels.map((channel, index) => (
-            <a
-              key={index}
-              href={channel.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-              className="group bg-white rounded-xl border-2 border-muted hover:bg-muted p-8 transition-all duration-300"
-            >
-              <div className="w-18 h-18 rounded-lg bg-neutral-light/10 flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-beige">
-                <img src={channel.icon} alt={channel.title} className="w-8 h-8 opacity-90" />
-              </div>
-
-              <h3 className="text-2xl leading-tight text-purple mb-4">{channel.title}</h3>
-              <p className="text-[1rem] leading-relaxed text-neutral-light mb-8">{channel.description}</p>
-
-              <span className="inline-flex items-center gap-1 text-pink font-semibold transition-all duration-300 group-hover:translate-x-1">
-                {channel.button} ⤏
-              </span>
-            </a>
-          ))}
-        </div>
-
       </Container>
     </section>
   );

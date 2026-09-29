@@ -8,7 +8,8 @@ function ServiceCard({ title, description, icon, number }) {
       transition-all duration-300
     ">
       {number && (
-        <span className="font-sora font-bold text-6xl leading-none text-white/10 group-hover:text-lemon select-none mb-6 transition-colors duration-300">
+        <span className="font-bold text-6xl leading-none text-white/10 
+        group-hover:text-lemon select-none mb-6 transition-colors duration-300">
           {number}
         </span>
       )}
@@ -18,7 +19,7 @@ function ServiceCard({ title, description, icon, number }) {
       )}
 
 
-      <h3 className="text-xl font-sora font-bold leading-tight text-white mb-3">
+      <h3 className="text-xl font-bold leading-tight text-white mb-3">
         {title}
       </h3>
 

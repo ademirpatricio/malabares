@@ -1,24 +1,37 @@
-import WeddingBar from "../components/ui/WeddingBar";
+{/* Componentens */}
 import Navbar from "../components/layout/Navbar";
-import AboutHero from "../components/sections/AboutHero";
-import AboutServices from "../components/sections/AboutServices";
-import AboutTeam from "../components/sections/AboutTeam";
-import AboutPicture from "../components/sections/AboutPicture";
-import Logos from "../components/ui/Logos";
 import Cta from "../components/layout/Cta";
-import Footer from "../components/layout/Footer";
+import InfiniteBanner from "../components/ui/InfiniteBanner";
 
+{/* About sessions */}
+import AboutHero from "../components/sections/about/AboutHero";
+import AboutServices from "../components/sections/about/AboutServices";
+import AboutTeam from "../components/sections/about/AboutTeam";
+import AboutPicture from "../components/sections/about/AboutPicture";
+
+{/* Infinit baner elements */}
+const items = [
+  "Desenvolvimento de Sites",
+  "Marketing Digital",
+  "Estratégia de Conteúdo",
+  "SEO e Patrocinados",
+  "Branding",
+  "Criação de Infoprodutos",
+  "Identidade Visual",
+];
+
+{/* ---------- */}
 function About() {
   return (
     <>
         <Navbar />
         <AboutHero />
+        <InfiniteBanner variant="lemon" items={items}/>
         <AboutServices />
         <AboutTeam />
         <AboutPicture />
-        <Logos />
+        <InfiniteBanner variant="pink" items={items}/>
         <Cta/>
-        <Footer/>
     </>
   );
 };

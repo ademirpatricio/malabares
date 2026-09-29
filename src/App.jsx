@@ -4,10 +4,14 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+
+{/* 
 import Contact from "./pages/Contact";
 import LeadCapture from "./pages/LeadCapture";
 import Thanks from "./pages/Thanks";
-import NotFound from "./pages/NotFound";
+*/}
+
 
 import ExitIntent from "./components/ui/ExitIntent";
 import CookieBanner from "./components/ui/CookieBanner";
@@ -59,6 +63,12 @@ function App() {
           element={<About />}
         />
 
+        <Route 
+          path="*" 
+          element={<NotFound />} 
+        />
+
+        {/* 
         <Route
           path="/contato"
           element={<Contact />}
@@ -73,11 +83,7 @@ function App() {
           path="/obrigado"
           element={<Thanks />}
         />
-
-        <Route 
-          path="*" 
-          element={<NotFound />} 
-        />
+        */}
 
       </Routes>
 

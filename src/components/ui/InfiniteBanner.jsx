@@ -42,7 +42,7 @@ function InfiniteBanner({ variant = "lemon", items: itemsProp }) {
         {[...activeItems, ...activeItems].map((item, index) => (
           <div
             key={index}
-            className={`flex items-center ${text} text-xl lg:text-2xl font-black 
+            className={`flex items-center ${text} text-lg lg:text-xl font-black 
             tracking-wide mr-10`}
           >
             <span>{item}</span>

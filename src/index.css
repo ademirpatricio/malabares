@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-html { scroll-behavior: smooth; scrollbar-gutter: stable; }
+html { 
+  scroll-behavior: smooth; 
+  scrollbar-gutter: stable; 
+}
 
 @theme {
   
@@ -32,7 +35,7 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
   
   --color-beige: #E9DECC;
   --color-beige-dark: #F9E0B6;
-  --color-beige-light: #f9ecd6;
+  --color-beige-light: #fff9f0;
 
   --color-neutral: #323137;
   --color-neutral-dark: #1E1D21;
@@ -44,8 +47,6 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 @layer base {
   body{
     color: var(--color-roxo);
-  }
-  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sora);
   }
   p {
@@ -111,6 +112,10 @@ html { scroll-behavior: smooth; scrollbar-gutter: stable; }
   #HomeHero {
     background-image: url('./assets/images/hero-background.jpg');
   }
+}
+
+#aboutHero {
+  background-image: url('./assets/images/about-hero-bg.jpg');
 }
 
 /* HERO — elemento circular girando */

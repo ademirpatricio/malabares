@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import IcMenu from "../ui/IcMenu";
 
@@ -21,6 +22,9 @@ function IcClose({ size = 24, className = "" }) {
 }
 
 function Navbar() {
+
+  const { pathname } = useLocation();
+  const lightLogo = ["/sobre", "/contato"].includes(pathname);
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +53,7 @@ function Navbar() {
             <Link to="/" aria-label="Voltar para a Home"
               className={`inline-block transition-all duration-500 ${scrolled ? "opacity-0 pointer-events-none" : "opacity-100 hover:opacity-80"}`}>
               <img src={logo} alt="Logo da Malabares"
-                className="w-[140px] md:w-[200px] h-auto" />
+                className="w-[140px] md:w-[200px] h-auto transition-all duration-300"/>
             </Link>
 
             {/* DIREITA — hambúrguer */}
@@ -103,13 +107,16 @@ function Navbar() {
             className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Sobre nós
           </a>
-          <a onClick={() => setIsOpen(false)} href="https://www.behance.net/malabaresmkt" target="_blank" rel="noopener noreferrer"
-            className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
-            Trabalhos
-          </a>
-          <a onClick={() => setIsOpen(false)} href="/contato"
+          <a onClick={() => setIsOpen(false)} 
+            href="https://wa.me/5581997278234?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Malabares%20Wedding.%20"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Contato
+          </a>
+          <a onClick={() => setIsOpen(false)} href="https://www.behance.net/malabaresmkt" target="_blank" rel="noopener noreferrer"
+            className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
+            Portfólio
           </a>
           <a onClick={() => setIsOpen(false)} href="https://wedding.malabares.com.br" target="_blank" rel="noopener noreferrer"
             className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">

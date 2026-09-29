@@ -9,6 +9,8 @@ import logoclient6 from "../../assets/images/logos/logo-client-6.png";
 import logoclient7 from "../../assets/images/logos/logo-client-7.png";
 import logoclient8 from "../../assets/images/logos/logo-client-8.png";
 
+import logosBg from "../../assets/images/logos-bg.jpg";
+
 function Logos() {
   const logos = [
     logoclient1, logoclient2, logoclient3, logoclient4,
@@ -16,7 +18,12 @@ function Logos() {
   ];
 
   return (
-    <section id="logos-clients" className="w-full py-24 bg-purple-dark">
+    <section id="logos-clients" className="w-full py-24 bg-lilac-light"
+    style={{ 
+          backgroundImage: `url(${logosBg})`, 
+          backgroundSize: "cover", 
+          backgroundPosition: "top" 
+      }}>
       <Container>
 
         {/* GRID LOGOS */}
