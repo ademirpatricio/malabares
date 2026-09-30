@@ -11,6 +11,8 @@ import icBehance   from "../../../assets/images/icons/ic-social-behance.svg";
 import icLinkedin  from "../../../assets/images/icons/ic-social-linkedin.svg";
 import icTiktok    from "../../../assets/images/icons/ic-social-tiktok.svg";
 
+import ButtonArrow from "../../ui/ButtonArrow";
+
 const socials = [
   { icon: icInstagram, title: "Instagram", link: "https://www.instagram.com/malabaresmkt" },
   { icon: icBehance,   title: "Behance",   link: "https://www.behance.net/malabaresmkt" },
@@ -22,9 +24,8 @@ function AboutHero() {
   return (
     <section
       id="aboutHero"
-      className="relative w-full overflow-hidden font-sora"
+      className="relative w-full overflow-hidden font-sora md:min-h-[93vh] pb-10 md:pb-0"
       style={{ 
-        minHeight: "93vh",
         backgroundSize: "cover",
         backgroundPosition: "top center",
         backgroundAttachment: "fixed", 
@@ -33,15 +34,16 @@ function AboutHero() {
 
       {/* Conteúdo */}
       <Container className="h-full relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[93vh]">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[93vh]">
 
           {/* Coluna esquerda — eyebrow + título + CTA */}
-          <div className="flex flex-col justify-center pt-28 md:pt-24 pb-10 md:pb-24">
+          <div className="flex flex-col justify-start md:justify-center 
+          pt-36 md:pt-24 pb-6 md:pb-24">
             <span
               data-aos="fade-up"
               data-aos-delay="0"
               className="text-xs 
-              font-semibold md:tracking-[0.25em] uppercase text-purple mb-16"
+              font-semibold md:tracking-[0.25em] uppercase text-purple mb-8 md:mb-16"
             >
               Sobre a <span className="font-black text-purple">Malabares</span>
             </span>
@@ -50,28 +52,21 @@ function AboutHero() {
               data-aos="fade-up"
               data-aos-delay="150"
               className="font-bold text-white 
-              leading-[1.05] text-[38px] 
-              md:text-[45px] mb-12 max-w-md"
+              leading-[1.05] text-[32px] 
+              md:text-[45px] mb-6 md:mb-12 max-w-md"
             >
               Mais do que uma agência, somos{" "}
               <span className="text-purple">parceiros do seu crescimento.</span>
             </h1>
 
-            <a
-              data-aos="fade-up"
-              data-aos-delay="300"
-              href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 text-white font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
-            >
-              <span className="underline-slide transition-colors duration-300">
-                Vamos conversar
-              </span>
-              <span className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-white shrink-0">
-                <IcArrow size={16} className="text-white transition-colors duration-300 group-hover:text-pink" />
-              </span>
-            </a>
+            <ButtonArrow 
+              href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares" 
+              label="Fala com a gente" 
+              variant="lemon"
+              size="md" 
+            />
+
+
           </div>
 
           {/* Coluna direita — badge circular */}
@@ -130,14 +125,16 @@ function AboutHero() {
         data-aos-delay="200"
         src={aboutThayna}
         alt="Thayná Aguiar"
-        className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 h-[88%] object-contain object-bottom pointer-events-none z-20"
+        className="hidden md:block absolute 
+        bottom-0 left-1/2 -translate-x-1/2 h-[88%] 
+        object-contain object-bottom pointer-events-none z-20"
       />
 
       {/* Imagem mobile */}
       <img
         src={aboutThayna}
         alt="Thayná Aguiar"
-        className="md:hidden w-full max-h-[40vh] object-contain object-bottom pointer-events-none"
+        className="hidden"
       />
 
       {/* Rodapé — prova social + redes sociais */}

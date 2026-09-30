@@ -29,7 +29,7 @@ const team = [
 
 function AboutTeam() {
   return (
-    <section id="aboutTeam" className="w-full py-24 bg-white"
+    <section id="aboutTeam" className="w-full pt-0 pb-12 md:py-24 bg-white"
     style={{
       backgroundImage: `url(${aboutTeamBg})`,
       backgroundPosition: "bottom center",
@@ -52,10 +52,10 @@ function AboutTeam() {
                   />
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="font-semibold text-lilac-light">{member.name}</h3>
-                    <p className="text-xs text-lilac-light/50">{member.role}</p>
+                <div className="flex flex-col md:flex-row justify-between">
+                  <div className="mb-2">
+                    <h3 className="font-semibold text-lilac-light mb-1">{member.name}</h3>
+                    <p className="text-xs text-lilac-light/50 mb-1">{member.role}</p>
                   </div>
                   <div className="flex gap-1">
                     <SocialLink white icon={icInstagram} title="Instagram" link={member.instagram} />
@@ -68,11 +68,11 @@ function AboutTeam() {
           </div>
 
           {/* Texto */}
-          <div data-aos="fade-left" className="max-w-[450px]">
+          <div data-aos="fade-up" className="max-w-[450px]">
 
             <h2 className="
-            font-bold text-2xl md:text-3xl lg:text-4xl 
-            leading-tight tracking-tight text-white mb-8">
+            text-3xl md:text-3xl lg:text-4xl
+              font-bold leading-tight text-white mb-6">
               Uma dupla apaixonada por <span className="text-pink">
               comunicação, design e tecnologia.</span>
             </h2>

@@ -8,9 +8,10 @@ function AboutPicture() {
 
     <section id="AboutPicture"
       className="
-        w-full py-80
+        w-full py-50 md:py-80
         bg-cover bg-no-repeat bg-scroll lg:bg-fixed
         relative overflow-hidden
+        bg-center md:bg-top
       "
       style={{
         backgroundImage: `url(${aboutBg})`,

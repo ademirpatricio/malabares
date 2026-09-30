@@ -104,18 +104,14 @@ html {
 }
 
 /* HERO — background responsivo */
-#HomeHero {
-  background-image: url('./assets/images/hero-background-mobile.jpg');
-}
+#HomeHero,
+#aboutHero {
+    background-image: url('./assets/images/hero-background-mobile.jpg');
+  }
 
 @media (min-width: 768px) {
-  #HomeHero {
-    background-image: url('./assets/images/hero-background.jpg');
-  }
-}
-
-#aboutHero {
-  background-image: url('./assets/images/about-hero-bg.jpg');
+  #HomeHero {background-image: url('./assets/images/hero-background.jpg');}
+  #aboutHero {background-image: url('./assets/images/about-hero-bg.jpg');}
 }
 
 /* HERO — elemento circular girando */

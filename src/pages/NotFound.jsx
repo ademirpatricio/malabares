@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import Container from "../components/layout/Container";
 import Button from "../components/ui/Button";
@@ -6,6 +7,11 @@ import Button from "../components/ui/Button";
 function NotFound() {
 
   return (
+    <>
+    <Helmet>
+      <title>Página não encontrada • Malabares MKT &amp; TEC</title>
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
 
     <section
       id="notFound"
@@ -221,6 +227,7 @@ function NotFound() {
 
     </section>
 
+    </>
   );
 
 }

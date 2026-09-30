@@ -28,15 +28,17 @@ function Cta() {
             text-center
             mx-auto mb-24"
           >
-          <h3 className="text-3xl lg:text-4xl font-bold text-white uppercase">
-            O principal passo é <span className="text-purple"> <br/> sempre o primeiro.</span>
+          <h3 className="text-2xl md:text-4xl font-bold text-white uppercase">
+            O principal passo é <span className="text-purple">
+              <br/> sempre o primeiro.</span>
           </h3>
-          <p className="text-white mb-8">
-            Não se preocupe em ter tudo resolvido agora, <br/> a gente te ajuda durante o caminho.
+          <p className="text-white mb-5 max-w-md">
+            Não se preocupe em ter tudo resolvido agora, 
+            a gente te ajuda durante o caminho.
           </p>
           <ButtonArrow 
             href="https://wa.me/5581997278234?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+da+Malabares" 
-            label="Agende uma conversa" 
+            label="Vamos conversar" 
             variant="light"
             size="md" 
           />

@@ -1,5 +1,6 @@
 {/* Componentens */}
 import Navbar from "../components/layout/Navbar";
+import SEO from "../components/ui/SEO";
 import Cta from "../components/layout/Cta";
 import InfiniteBanner from "../components/ui/InfiniteBanner";
 
@@ -24,6 +25,11 @@ const items = [
 function About() {
   return (
     <>
+      <SEO
+        title="Sobre a Malabares"
+        description="Conheça a Malabares, agência criativa de marketing digital e tecnologia. Parceiros do crescimento da sua marca com estratégia, branding e redes sociais."
+        canonical="/sobre"
+      />
         <Navbar />
         <AboutHero />
         <InfiniteBanner variant="lemon" items={items}/>

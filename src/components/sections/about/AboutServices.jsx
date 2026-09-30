@@ -26,11 +26,12 @@ function AboutServices() {
       <Container>
 
         {/* Eyebrow + título centralizado */}
-        <div data-aos="fade-up" className="text-center mb-16">
-          <span className="font-sora text-xs font-semibold tracking-[0.2em] uppercase text-violet mb-4 inline-block">
+        <div data-aos="fade-up" className="text-left md:text-center mb-16">
+          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-violet mb-4 inline-block">
             O que a gente faz
           </span>
-          <h2 className="font-sora font-bold text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white max-w-[700px] mx-auto">
+          <h2 className="text-4xl md:text-3xl lg:text-4xl
+              font-bold leading-tight text-white">
             As ferramentas que usamos para <br/>  
             <span className="text-pink"> construir sua presença digital.</span>
           </h2>
