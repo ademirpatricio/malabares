@@ -1,9 +1,9 @@
-import Container from "../layout/Container";
-import benefitsBg from "../../assets/images/home-benefitis-bg.jpg";
-import IcArrow from "../ui/IcArrow";
-import clientImg1 from "../../assets/images/benefits-card-1.jpg";
-import clientImg2 from "../../assets/images/benefits-card-2.jpg";
-import clientImg4 from "../../assets/images/benefits-card-3.jpg";
+import Container from "../../layout/Container";
+import benefitsBg from "../../../assets/images/home-benefitis-bg.jpg";
+import IcArrow from "../../ui/IcArrow";
+import clientImg1 from "../../../assets/images/benefits-card-1.jpg";
+import clientImg2 from "../../../assets/images/benefits-card-2.jpg";
+import clientImg4 from "../../../assets/images/benefits-card-3.jpg";
 
 const cards = [
   {

@@ -1,19 +1,22 @@
-import Container from "../layout/Container";
-import ButtonArrow from "../ui/ButtonArrow";
+{/* Componentes */}
+import Container from "../../layout/Container";
+import ButtonArrow from "../../ui/ButtonArrow";
+import IcArrowDown from "../../ui/IcArrowDown";
 
-import heroThayna from "../../assets/images/hero-thayna.png";
-import heroAsset from "../../assets/images/hero-asset.svg";
-import IcArrow from "../ui/IcArrow";
-import IcArrowDown from "../ui/IcArrowDown";
-import avatar1 from "../../assets/images/avatar-1.png";
-import avatar2 from "../../assets/images/avatar-2.png";
-import avatar3 from "../../assets/images/avatar-3.png";
+{/* Imagens */}
+import heroThayna from "../../../assets/images/hero-thayna.png";
+import heroAsset from "../../../assets/images/hero-asset.svg";
 
-import icInstagram from "../../assets/images/icons/ic-social-instagram.svg";
-import icBehance from "../../assets/images/icons/ic-social-behance.svg";
-import icLinkedin from "../../assets/images/icons/ic-social-linkedin.svg";
-import icTiktok from "../../assets/images/icons/ic-social-tiktok.svg";
+import avatar1 from "../../../assets/images/avatar-1.png";
+import avatar2 from "../../../assets/images/avatar-2.png";
+import avatar3 from "../../../assets/images/avatar-3.png";
 
+import icInstagram from "../../../assets/images/icons/ic-social-instagram.svg";
+import icBehance from "../../../assets/images/icons/ic-social-behance.svg";
+import icLinkedin from "../../../assets/images/icons/ic-social-linkedin.svg";
+import icTiktok from "../../../assets/images/icons/ic-social-tiktok.svg";
+
+{/* Links para as redes sociais */}
 const socials = [
   { icon: icInstagram, title: "Instagram", link: "https://www.instagram.com/malabaresmkt" },
   { icon: icBehance,   title: "Behance",   link: "https://www.behance.net/malabaresmkt" },

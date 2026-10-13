@@ -1,8 +1,8 @@
-import Container from "../layout/Container";
+import Container from "../../layout/Container";
 
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
-import ctaImage from "../../assets/images/home-consultacy-bg.jpg";
+import ctaImage from "../../../assets/images/home-consultacy-bg.jpg";
 
 function HomeConsultancy() {
 

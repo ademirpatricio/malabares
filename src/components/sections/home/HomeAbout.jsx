@@ -1,9 +1,9 @@
-import Container from "../layout/Container";
-import IcArrow from "../ui/IcArrow";
-import ButtonArrow from "../../components/ui/ButtonArrow";
+import Container from "../../layout/Container";
+import IcArrow from "../../ui/IcArrow";
+import ButtonArrow from "../../ui/ButtonArrow";
 
-import homeAboutImage from "../../assets/images/home-about-image.jpg";
-import heroAssetLight from "../../assets/images/hero-asset-light.svg";
+import homeAboutImage from "../../../assets/images/home-about-image.jpg";
+import heroAssetLight from "../../../assets/images/hero-asset-light.svg";
 
 const pillars = [
   "Você fala\ncom quem faz.",

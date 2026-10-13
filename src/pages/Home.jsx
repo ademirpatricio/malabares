@@ -1,12 +1,13 @@
 {/* Bocos do site */}
 import Navbar from "../components/layout/Navbar";
 import SEO from "../components/ui/SEO";
-import HomeHero from "../components/sections/HomeHero";
 import InfiniteBanner from "../components/ui/InfiniteBanner";
-import HomeServices from "../components/sections/HomeServices";
-import HomeAbout from "../components/sections/HomeAbout";
-import HomeBenefits from "../components/sections/HomeBenefits";
 import Cta from "../components/layout/Cta";
+
+import HomeHero from "../components/sections/home/HomeHero";
+import HomeServices from "../components/sections/home/HomeServices";
+import HomeAbout from "../components/sections/home/HomeAbout";
+import HomeBenefits from "../components/sections/home/HomeBenefits";
 
 {/* Itens para os banners infinitos */}
 const items = [

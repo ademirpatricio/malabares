@@ -1,9 +1,9 @@
 {/* Componentes */}
-import Container from "../layout/Container";
-import ServiceCard from "../ui/ServiceCard";
+import Container from "../../layout/Container";
+import ServiceCard from "../../ui/ServiceCard";
 
 {/* Imagens */}
-import homeServicesBg from "../../assets/images/home-services-bg.jpg";
+import homeServicesBg from "../../../assets/images/home-services-bg.jpg";
 
 function HomeServices() {
   return (

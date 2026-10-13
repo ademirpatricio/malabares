@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 import Container from "../components/layout/Container";
@@ -194,9 +193,8 @@ function NotFound() {
               data-aos-delay="200"
             >
 
-              <Link to="/">
-
-                <Button
+              <Button
+                  link="/"
                   className="
                     border-white/20
 
@@ -214,8 +212,6 @@ function NotFound() {
                   ↪ Voltar para a Home
 
                 </Button>
-
-              </Link>
 
             </div>
 

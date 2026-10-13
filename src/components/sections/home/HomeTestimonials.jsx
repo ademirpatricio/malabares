@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Container from "../layout/Container";
+import Container from "../../layout/Container";
 
-import testimonial1 from "../../assets/images/testimonials-image-1.png";
-import testimonial2 from "../../assets/images/testimonials-image-2.png";
+import testimonial1 from "../../../assets/images/testimonials-image-1.png";
+import testimonial2 from "../../../assets/images/testimonials-image-2.png";
 
-import photo1 from "../../assets/images/home-clients-image-1.jpg";
-import photo2 from "../../assets/images/home-clients-image-2.jpg";
-import photo3 from "../../assets/images/home-clients-image-3.jpg";
-import photo4 from "../../assets/images/home-clients-image-4.jpg";
+import photo1 from "../../../assets/images/home-clients-image-1.jpg";
+import photo2 from "../../../assets/images/home-clients-image-2.jpg";
+import photo3 from "../../../assets/images/home-clients-image-3.jpg";
+import photo4 from "../../../assets/images/home-clients-image-4.jpg";
 
 const testimonials = [
   {
