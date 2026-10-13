@@ -33,7 +33,7 @@ function HomeAbout() {
               alt=""
               className="absolute pointer-events-none animate-spin-slow
               -bottom-10 right-5 w-[120px] h-[120px] z-10
-              md:-bottom-20 md:-right-20 md:w-[200px] md:h-[200px]"
+              md:-bottom-20 md:right-10 md:w-[200px] md:h-[200px]"
             />
           </div>
 

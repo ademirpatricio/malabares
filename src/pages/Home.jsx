@@ -2,6 +2,7 @@
 import Navbar from "../components/layout/Navbar";
 import SEO from "../components/ui/SEO";
 import InfiniteBanner from "../components/ui/InfiniteBanner";
+import Instagram from "../components/ui/Instagram";
 import Cta from "../components/layout/Cta";
 
 import HomeHero from "../components/sections/home/HomeHero";
@@ -42,6 +43,7 @@ function Home() {
       <HomeServices />
       <HomeAbout />
       <HomeBenefits />
+      <Instagram />
       <InfiniteBanner variant="pink" items={itemsMarketing}/>
       <Cta/>
     </>
