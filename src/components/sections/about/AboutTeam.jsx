@@ -33,6 +33,7 @@ function AboutTeam() {
     style={{
       backgroundImage: `url(${aboutTeamBg})`,
       backgroundPosition: "bottom center",
+      backgroundSize : 'cover',
     }}
     >
       <Container>
@@ -78,11 +79,13 @@ function AboutTeam() {
             </h2>
 
             <p className="leading-relaxed text-lilac-light mb-2">
-              Estamos em Recife, centro de inovação e cultura, e nascemos do sonho de transformar ideias criativas em negócios digitais de verdade.
+              Estamos em Recife, centro de inovação e cultura, e nascemos
+              do sonho de transformar ideias criativas em negócios digitais de verdade.
             </p>
 
             <p className="leading-relaxed text-lilac-light mb-5">
-              Unimos criatividade e análise de dados para criar conteúdo que atende às necessidades do seu público e do seu projeto.
+              Unimos criatividade e análise de dados para criar conteúdo
+              que atende às necessidades do seu público e do seu projeto.
             </p>
 
             <ButtonArrow 

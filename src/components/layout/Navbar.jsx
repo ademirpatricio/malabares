@@ -103,7 +103,7 @@ function Navbar() {
 
         {/* LINKS — alinhados à direita */}
         <nav className="flex flex-col items-end flex-1 justify-center gap-5 md:gap-6 px-12">
-          <a onClick={() => setIsOpen(false)} href="/sobre"
+          <a onClick={() => setIsOpen(false)} href="#homeAbout"
             className="font-sora text-white uppercase text-3xl md:text-5xl leading-tight hover:text-lemon transition-colors duration-300 cursor-pointer text-right">
             Sobre nós
           </a>

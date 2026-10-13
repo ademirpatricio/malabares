@@ -36,17 +36,20 @@ function HomeBenefits() {
           {/* Eyebrow + Título */}
           <div className="flex flex-col gap-4">
             <div data-aos="fade-up" className="flex flex-col gap-2">
-              <span className="text-xs font-semibold md:tracking-[0.25em] uppercase text-violet">
-                Talvez a gente <strong>combine...</strong>
+              <span className="text-xs font-semibold md:tracking-[0.25em] 
+              uppercase text-violet text-center md:text-left">
+                Talvez a gente combine...
               </span>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100">
-              <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-white">
+              <h2 className="font-bold text-2xl md:text-3xl text-center md:text-left
+              lg:text-4xl leading-tight tracking-tight text-white">
                 Se você se reconhece
               </h2>
               <h2 className="font-bold 
-              text-2xl md:text-3xl lg:text-4xl leading-tight tracking-tight text-pink">
+              text-2xl md:text-3xl lg:text-4xl text-center md:text-left
+              leading-tight tracking-tight text-pink">
                 em alguma dessas situações:
               </h2>
             </div>

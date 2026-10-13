@@ -1,3 +1,4 @@
+{/* Bocos do site */}
 import Navbar from "../components/layout/Navbar";
 import SEO from "../components/ui/SEO";
 import HomeHero from "../components/sections/HomeHero";

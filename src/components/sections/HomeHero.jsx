@@ -43,16 +43,18 @@ function HomeHero() {
             <span
               data-aos="fade-up"
               data-aos-delay="0"
-              className="text-xs 
-              font-semibold md:tracking-[0.25em] uppercase text-purple mb-12"
+              className="text-xs text-center md:text-left
+              font-semibold md:tracking-[0.25em] uppercase text-purple mb-6 md:mb-12"
             >
               Somos uma <span className="font-black">Agência</span> de MKT &amp; TEC
             </span>
             <h1
               data-aos="fade-up"
               data-aos-delay="150"
-              className="font-bold text-white
-              leading-[1.0] text-[38px] md:text-[55px] mb-2 md:mb-12"
+              className="
+              font-bold text-center md:text-left
+              text-white leading-[1.0]
+              text-[42px] md:text-[55px] mb-2 md:mb-12"
             >
               Pode deixar o
               <br />
@@ -83,17 +85,19 @@ function HomeHero() {
               data-aos="fade-up"
               data-aos-delay="300"
               className="text-white font-sora font-light 
-              text-left md:text-right leading-relaxed md:max-w-[280px]"
+              text-center md:text-right leading-relaxed md:max-w-[280px]"
             >
-              Mais do que criar páginas ou gerir redes sociais, caminhamos ao seu lado. Seja para
-              dar os primeiros passos ou para profissionalizar a reputação que você já tem.
+              Mais do que criar páginas ou gerir redes sociais,
+              caminhamos ao seu lado. Seja para
+              dar os primeiros passos ou para melhorar
+              a presença que você já tem.
             </p>
 
             <a
               data-aos="fade-up"
               data-aos-delay="400"
               href="#homeServices"
-              className="flex items-center gap-4 text-white font-sora 
+              className="flex items-center gap-4 text-white font-sora mx-auto md:mr-0
               font-semibold tracking-[0.2em] uppercase text-sm w-fit group"
             >
               <span className="underline-slide group-hover:text-purple 

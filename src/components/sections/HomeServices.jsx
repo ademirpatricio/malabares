@@ -1,47 +1,49 @@
+{/* Componentes */}
 import Container from "../layout/Container";
-import NavLink from "../ui/NavLink";
-import homeServicesBg from "../../assets/images/home-services-bg.jpg";
 import ServiceCard from "../ui/ServiceCard";
 
-import homeServicesIcon1 from "../../assets/images/icons/home-services-icon-1.svg";
-import homeServicesIcon2 from "../../assets/images/icons/home-services-icon-2.svg";
-import homeServicesIcon3 from "../../assets/images/icons/home-services-icon-3.svg";
-import homeServicesIcon4 from "../../assets/images/icons/home-services-icon-4.svg";
-import homeServicesIcon5 from "../../assets/images/icons/home-services-icon-5.svg";
+{/* Imagens */}
+import homeServicesBg from "../../assets/images/home-services-bg.jpg";
 
 function HomeServices() {
   return (
-    <section id="homeServices" 
-    className="w-full py-18 md:pt-24 md:pb-24" 
-    style={{ backgroundImage: `url(${homeServicesBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+    <section 
+      id="homeServices" 
+      className="w-full py-18 md:pt-24 md:pb-24" 
+      style={{ 
+        backgroundImage: `url(${homeServicesBg})`, 
+        backgroundSize: "cover", 
+        backgroundPosition: "center" }}
+      >
+      
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
           {/* HEADER */}
-          <div
-            data-aos="fade-right"
-            className="w-full text-left flex flex-col justify-center gap-8"
-          >
-
+          <div className="w-full text-left flex flex-col justify-center gap-5">
+        
+            <span 
+              data-aos="fade-up" data-aos-delay="100" 
+              className="text-xs font-semibold md:tracking-[0.25em] uppercase text-violet">
+              O que fazemos por aqui
+            </span>       
+            
             <h2
               data-aos="fade-up"
-              data-aos-delay="100"
-              className="text-4xl md:text-3xl lg:text-4xl
-              font-sora font-bold
-              leading-tight text-white"
-            >
-              Sua marca não precisa <span className="text-pink"> fazer de tudo sozinha.</span>
+              data-aos-delay="200"
+              className="font-sora font-bold text-4xl md:text-3xl lg:text-4xl 
+              leading-tight tracking-tight text-white">
+              Você e sua empresa não precisam <span className="text-pink"> fazer de tudo sozinhos.</span>
             </h2>
 
             <p
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="300"
               className="leading-relaxed text-lilac-light"
             >
               Da estratégia à execução, juntamos criatividade,
-              comunicação e tecnologia. Tudo isso para construir
-              uma presença digital que tenha a ver com o
-              seu negócio e com quem você quer alcançar.
+              comunicação e tecnologia. Fazemos tudo para construir
+              uma presença digital forte para o seu negócio.     
             </p>
 
 

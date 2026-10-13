@@ -3,10 +3,10 @@ import AOS from "aos";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 {/* 
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import LeadCapture from "./pages/LeadCapture";
 import Thanks from "./pages/Thanks";
@@ -58,17 +58,18 @@ function App() {
           element={<Home />}
         />
 
-        <Route
-          path="/sobre"
-          element={<About />}
-        />
-
         <Route 
           path="*" 
           element={<NotFound />} 
         />
 
         {/* 
+
+        <Route
+          path="/sobre"
+          element={<About />}
+        />
+        
         <Route
           path="/contato"
           element={<Contact />}
