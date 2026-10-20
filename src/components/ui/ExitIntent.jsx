@@ -29,36 +29,69 @@ function ExitIntent() {
 
   return (
     <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-sm px-6">
-      <div className="relative w-full max-w-xl overflow-hidden rounded-lg border border-neutral-light/20 bg-white p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.15)] animate-[fadeUp_.4s_ease]">
+      <div className="relative w-full max-w-lg 
+      bg-white rounded-2xl shadow-[0_20px_80px_rgba(0,0,0,0.15)] 
+      p-8 animate-[fadeUp_.4s_ease]">
 
         {/* FECHAR */}
         <button
           onClick={closeModal}
-          className="absolute top-4 right-4 text-neutral-light transition-colors duration-300 hover:text-neutral"
+          aria-label="Fechar"
+          className="absolute top-4 right-4 text-neutral-light hover:text-neutral transition-colors duration-200 text-lg leading-none"
         >
           ✕
         </button>
 
-        {/* EYEBROW */}
-        <span className="inline-block font-sora font-semibold text-sm tracking-[0.2em] uppercase text-lilac text-center w-full mb-6">
-          antes de sair
-        </span>
+        {/* CABEÇALHO */}
+        <div className="flex items-start gap-10 ">
 
-        {/* TÍTULO */}
-        <h3 className="text-2xl md:text-3xl text-center w-full leading-tight tracking-tight text-purple mb-6">
-          Sua ideia pode começar hoje.
-        </h3>
+          {/* Ícone */}
+          <div className="flex-shrink-0 w-28 h-28 rounded-xl
+          bg-lilac/20 flex items-center justify-center">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" className="text-lilac" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
 
-        {/* TEXTO */}
-        <p className="text-[1rem] leading-relaxed text-neutral-light text-center mb-10">
-          Se você chegou até aqui, não deixe seu projeto para depois.
-          <strong className="text-neutral"> Vamos transformar isso em algo real.</strong>
-        </p>
+          {/* Texto */}
+          <div className="mb-4">
+            <p className="font-sora font-semibold text-base text-lilac mb-4">Antes de sair...</p>
+            <h2 className="font-sora font-medium text-3xl text-purple mb-4">
+              Seu projeto pode começar hoje
+            </h2>
+          </div>
+          
+        </div>
+        {/* DESCRIÇÃO */}
+            <p className="text-base leading-relaxed text-neutral-light mb-8">
+              O primeiro passo é sempre o mais importante. Se você chegou até aqui,
+              não deixe o seu projeto para depois.{" "}
+              <strong className="text-neutral">Vamos transformar isso em algo real.</strong>
+            </p>
 
-        {/* CTA */}
-        <Button link="https://www.instagram.com/malabaresmkt" className="w-full">
-          ↪ Segue a gente no Instagram
-        </Button>
+        
+
+        {/* BOTÕES */}
+        <div className="flex flex-col gap-3">
+          <Button
+            link="https://www.instagram.com/malabaresmkt"
+            target="_blank"
+            variant="primary"
+            className="w-full"
+          >
+            ↗ Segue no Instagram
+          </Button>
+          <Button
+            link="https://www.linkedin.com/company/malabaresmkt"
+            target="_blank"
+            variant="outline"
+            className="w-full"
+          >
+            ↗ Segue no Linkedin
+          </Button>
+        </div>
 
       </div>
     </div>
